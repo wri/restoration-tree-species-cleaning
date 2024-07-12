@@ -193,61 +193,6 @@ names(unmatched_project_data_remain.WCVP_sub) <- to_snake_case(names(unmatched_p
 
 all_unmatched_project_data <- unmatched_project_data_remain.WCVP_sub
 
-# save matched data -------------------------------------------------------
-
-## WFO matched
-#save(
-#  project_data.WFO,
-#  file = here(
-#    "Tree Species",
-#    "Data",
-#    "Processed",
-#    "Matched Data",
-#    "WFO Match",
-#    "Rdata",
-#    "project_data_wfo_match_6_05.rdata"
-#  )
-#)
-#
-## WCVP match
-#save(project_data_remain.WCVP,
-#     file = here(
-#       "Tree Species",
-#       "Data",
-#       "Processed",
-#       "Matched Data",
-#       "WCVP Match",
-#       "Rdata",
-#       "project_data_wcvp_match_6_07.rdata"
-#     )
-#)
-#
-## Bound matches
-#save(all_matched_project_data,
-#     file = here(
-#       "Tree Species",
-#       "Data",
-#       "Processed",
-#       "Matched Data",
-#       "All Match",
-#       "Rdata",
-#       "all_matched_project_data_6_07.rdata"
-#     )
-#)
-#
-## Remaining non-matches
-#save(all_unmatched_project_data,
-#     file = here(
-#       "Tree Species",
-#       "Data",
-#       "Processed",
-#       "Unmatched Data",
-#       "Rdata",
-#       "all_unmatched_project_data_6_07.rdata"
-#     )
-#)
-
-
 # save .csv files ---------------------------------------------------------
 
 # Bound matches
@@ -259,7 +204,7 @@ write_csv(all_matched_project_data,
        "Matched Data",
        "All Match",
        "CSV",
-       "all_matched_project_data_7_03.csv"
+       "all_matched_project_data_7_09.csv"
      )
 )
 
@@ -271,7 +216,7 @@ write_csv(all_unmatched_project_data,
        "Processed",
        "Unmatched Data",
        "CSV",
-       "all_unmatched_project_data_7_03.csv"
+       "all_unmatched_project_data_7_09.csv"
      )
 )
 

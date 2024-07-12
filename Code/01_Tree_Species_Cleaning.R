@@ -113,8 +113,7 @@ project_data_clean <- project_data_clean %>%
         "nontree feb",
         "null",
         "feb",
-        "umbrellaovacaddo jack fruitmangoes,albizia",
-        "maoes"
+        "umbrellaovacaddo jack fruitmangoes,albizia"
       ) ~ NA_character_,
       TRUE ~ name_clean
     )
@@ -137,7 +136,7 @@ project_data_clean <- project_data_clean %>%
     name_clean = str_replace_all(name_clean, "africam", "african"),
     name_clean = str_replace_all(
       name_clean,
-      "gravellia|gravilia|grevelia|grevelea|grebillea|grevellea|grevillia|gravellea|gravillea",
+      "gravellia|gravilia|grevelia|grevelea|grebillea|grevellea|grevillia|gravellea|gravillea|\\bgrave\\b",
       "grevillea"
     ),
     name_clean = str_replace_all(name_clean, "upaca", "uapaca"),
@@ -178,7 +177,7 @@ project_data_clean <- project_data_clean %>%
         ) ~ "mangifera indica",
         str_detect(name_clean, "cassava|casaava") ~ "manihot glaziovii",
         str_detect(name_clean, "orita multicola|achuechue") ~ "orita multicola",
-        str_detect(name_clean, "\\bmaos\\b|\\bmaize\\b|\\bmao\\b|\\bmais\\b") ~ "zea mays",
+        str_detect(name_clean, "\\bmaos\\b|\\bmaize\\b|\\bmao\\b|\\bmais\\b|\\bmaoes\\b") ~ "zea mays",
         str_detect(name_clean, "uapaca spp|milanga") ~ "uapaca",
         str_detect(name_clean, "uapaca guineensis") ~ "uapaca guineensis",
         str_detect(name_clean, "soja") ~ "glycine max",
@@ -207,12 +206,12 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "\\btree tomatoes\\b|tamarillo") ~ "solanum betaceum",
         str_detect(
           name_clean,
-          "\\btomato\\b|\\btomate\\b|\\btomates\\b|\\btomatoes\\b"
+          "\\btomato\\b|\\btomate\\b|\\btomates\\b|\\btomatoes\\b|\\btotame\\b"
         ) ~ "solanum lycopersicum",
         str_detect(name_clean, "trema orientalis") ~ "trema orientalis",
         str_detect(name_clean, "papaya|pawpaw|paw paw|papayer") ~ "carica papaya",
         str_detect(name_clean, "crossolier|corossolier") ~ "annona muricata",
-        str_detect(name_clean, "heritaria utilis") ~ "heritiera utilis",
+        str_detect(name_clean, "heritaria utilis|haritaria utilis") ~ "heritiera utilis",
         str_detect(
           name_clean,
           "melia azedach|melia azerach|china berry|chinaberry"
@@ -236,8 +235,8 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "swatziz madagacahensis|swartzia madagacahensis") ~ "swartzia mangabalensis",
         str_detect(name_clean, "beans|bean - planted in ha") ~ "vicia",
         str_detect(name_clean, "brastchegia spiciformis") ~ "brachystegia spiciformis",
-        str_detect(name_clean, "cedrella ordorata") ~ "cedrela odorata",
-        str_detect(name_clean, "ciba petando") ~ "ceiba pentandra",
+        str_detect(name_clean, "cedrella ordorata|cedrella odorata") ~ "cedrela odorata",
+        str_detect(name_clean, "ciba patendo") ~ "ceiba pentandra",
         str_detect(name_clean, "cola acuminata") ~ "cola acuminata",
         str_detect(name_clean, "cola lepidota") ~ "cola lepidota",
         str_detect(name_clean, "petit cola") ~ "garcinia kola",
@@ -303,9 +302,9 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "sorghum moench|sorghum mohench") ~ "sorghum bicolor",
         str_detect(name_clean, "le sorg|sorgho") ~ "sorghum",
         str_detect(name_clean, "sunflowers") ~ "helianthus annuus",
-        str_detect(name_clean, "sweet potato") ~ "ipomoea batatas",
+        str_detect(name_clean, "sweet potato|patate douce") ~ "ipomoea batatas",
         str_detect(name_clean, "\\bpotato\\b") ~ "solanum tuberosum",
-        str_detect(name_clean, "mbogabuchungu|mbogabughungu|mbogabushungu") ~ "solanum nigrum",
+        str_detect(name_clean, "mbogabuchungu|mbogabughungu|mbogabushungu") ~ "solanum macrocarpon",
         str_detect(name_clean, "vetiver grass") ~ "chrysopogon zizanioides",
         str_detect(name_clean, "triplochiton scleroxylon|ayous") ~ "triplochiton scleroxylon",
         str_detect(name_clean, "dioscorea") ~ "dioscorea",
@@ -318,7 +317,7 @@ project_data_clean <- project_data_clean %>%
         str_detect(
           name_clean,
           "cocoa|theobroma cacao|cacao|theobroma caoa|theobroma cocoa"
-        ) ~ "theobroma cocao",
+        ) ~ "theobroma cacao",
         str_detect(name_clean, "coconuts|coccos nucifera|cocos nucifera") ~ "cocos nucifera",
         str_detect(name_clean, "pomagranate|pomegranate") ~ "punica granatum",
         str_detect(name_clean, "busala tuber") ~ "dioscorea hirtiflora",
@@ -326,7 +325,7 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "grevillea robusts|grevillea robusta") ~ "grevillea robusta",
         str_detect(name_clean, "theka|teak") ~ "tectona grandis",
         str_detect(name_clean, "cola boxiana") ~ "cola boxiana",
-        str_detect(name_clean, "\\bpepper\\b") ~ "capsicum annum",
+        str_detect(name_clean, "\\bpepper\\b|\\bpoivrier\\b") ~ "piper nigrum",
         str_detect(name_clean, "\\bbirch\\b") ~ "betula",
         str_detect(name_clean, "ficus sycamora") ~ "ficus Sycomorus",
         str_detect(name_clean, "celery") ~ "apium graveolens",
@@ -356,6 +355,11 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "amaranth|lengalenga") ~ "amaranth",
         str_detect(name_clean, "\\bwillow\\b") ~ "salix",
         str_detect(name_clean, "casimiroa edulis") ~ "casimiroa edulis",
+        str_detect(name_clean, "semia chlorophora") ~ "chlorophora excelsa",
+        str_detect(name_clean, "paradise apple") ~ "malus pumila",
+        str_detect(name_clean, "ziziphus morticians|ziziphus morticians|Ziziphusmoriciana") ~ "ziziphus mauritiana",
+        str_detect(name_clean, "\\briz\\b") ~ "rhizophora",
+        str_detect(name_clean, "\\bhazombato\\b") ~ "kalanchoe orgyalis",
         TRUE ~ name_clean
       )
   )
@@ -364,15 +368,10 @@ project_data_clean <- project_data_clean %>%
 
 # species I am unsure of:
 
-# grave?
-# riz
-# Tsimitetra
+# tsimitetra
 # le ma
 # mol
-# totame (this might be a mispelling of tomate)
-# hazombato
 # matembela
-# mbogabuchungu
 # molucata
 # mil
 # wild crippers
@@ -382,9 +381,9 @@ project_data_clean <- project_data_clean %>%
 # le ha
 # gbaji
 # local grasses
-# maoes
 # mwanga
-# poivrier
+# sarimanga
+# tavia
 
 # Make first letter capitalized -------------------------------------------
 
@@ -395,6 +394,11 @@ project_data_clean <- project_data_clean %>%
 
 project_data_clean <- project_data_clean %>%
   select(tree_species_uuid, name_clean)
+
+# drop NAs ----------------------------------------------------------------
+
+project_data_clean <- project_data_clean %>%
+  filter(!is.na(name_clean))
 
 # save data ---------------------------------------------------------------
 
