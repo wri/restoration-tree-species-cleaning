@@ -20,7 +20,7 @@ library(stringi)
 
 # Load data ---------------------------------------------------------------
 
-project_data_raw <- read_excel(
+project_data_06_03 <- read_excel(
   here(
     "Tree Species",
     "Data",
@@ -30,30 +30,44 @@ project_data_raw <- read_excel(
   )
 )
 
+project_data_07_22 <- read_excel(
+  here(
+    "Tree Species",
+    "Data",
+    "Raw",
+    "TerraFund Tree Species",
+    "TerraFund Tree Species Export 2024-07-22.xlsx"
+  )
+)
+
+
 # convert project_data_raw columns to snake_case ------------------------------
 
-names(project_data_raw) <- to_snake_case(names(project_data_raw))
+names(project_data_06_03) <- to_snake_case(names(project_data_06_03))
 
-# subset columns to tree_speices_uuid and species name --------------------
+names(project_data_07_22) <- to_snake_case(names(project_data_07_22))
 
-project_data_clean <- project_data_raw %>%
-  select(tree_species_uuid, name)
+# subset columns to tree_speices_uuid, species name, project name --------------------
+
+project_data_07_22 <- project_data_07_22 %>%
+  select(tree_species_uuid, name, project_name, country_code)
 
 # convert to dataframe ----------------------------------------------------
 
-project_data_clean <- as.data.frame(project_data_clean)
+project_data_07_22 <- as.data.frame(project_data_07_22)
 
 # create new species name column ------------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(name_clean = tolower(name)) %>%
   arrange(name_clean)
 
 # convert species to Latin-ASCII ------------------------------------------
 
-project_data_clean <- project_data_clean %>%
-  mutate(name_clean = stri_trans_general(name_clean, "Latin-ASCII"))
-
+project_data_07_22 <- project_data_07_22 %>%
+  mutate(name_clean = stri_trans_general(name_clean, "Latin-ASCII"),
+         project_name = stri_trans_general(project_name, "Latin-ASCII"),
+         project_name = tolower(project_name))
 
 # str_replace_all typos ---------------------------------------------------
 
@@ -63,12 +77,16 @@ project_data_clean <- project_data_clean %>%
 # remove all numbers and "."
 # remove "spp"
 # remove whitespace
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(
+    name_clean = str_remove_all(name_clean, "\\\\t"),
+    name_clean = str_remove_all(name_clean, "\\\\"),
+    name_clean = str_remove_all(name_clean, "\\.\\\\"),
     name_clean = str_remove_all(name_clean,
-                                "\\?"),
-    name_clean = str_remove_all(name_clean, "[0-9]"),
+                                "\\?\\t"),
+    name_clean = str_remove_all(name_clean, "\\?"),
     name_clean = str_remove_all(name_clean, "[.]"),
+    name_clean = str_remove_all(name_clean, "[0-9]"),
     name_clean = str_remove_all(
       name_clean,
       "spp |\\bspp\\b|\\bsp\\b|\\bspecies\\b|species feb|\\bspecie\\b"
@@ -80,7 +98,7 @@ project_data_clean <- project_data_clean %>%
 
 # convert NAs -------------------------------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(
     name_clean = case_when(
       name_clean == "" ~ NA_character_,
@@ -121,7 +139,7 @@ project_data_clean <- project_data_clean %>%
 
 # edit names using str_replace_all ----------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(
     name_clean = str_replace_all(
       name_clean,
@@ -152,7 +170,7 @@ project_data_clean <- project_data_clean %>%
 
 # case_when str_replace ---------------------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(
     name_clean =
       case_when(
@@ -176,7 +194,7 @@ project_data_clean <- project_data_clean %>%
           "mangifera indica|mangifera endica|\\bmango\\b|\\bmangoes\\b|\\bmangos\\b"
         ) ~ "mangifera indica",
         str_detect(name_clean, "cassava|casaava") ~ "manihot glaziovii",
-        str_detect(name_clean, "orita multicola|achuechue") ~ "orita multicola",
+        str_detect(name_clean, "orita multicola|achuechue") ~ "lannea welwitschii",
         str_detect(name_clean, "\\bmaos\\b|\\bmaize\\b|\\bmao\\b|\\bmais\\b|\\bmaoes\\b") ~ "zea mays",
         str_detect(name_clean, "uapaca spp|milanga") ~ "uapaca",
         str_detect(name_clean, "uapaca guineensis") ~ "uapaca guineensis",
@@ -302,7 +320,7 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "sorghum moench|sorghum mohench") ~ "sorghum bicolor",
         str_detect(name_clean, "le sorg|sorgho") ~ "sorghum",
         str_detect(name_clean, "sunflowers") ~ "helianthus annuus",
-        str_detect(name_clean, "sweet potato|patate douce") ~ "ipomoea batatas",
+        str_detect(name_clean, "sweet potato|patate douce|\\bmatambele\\b") ~ "ipomoea batatas",
         str_detect(name_clean, "\\bpotato\\b") ~ "solanum tuberosum",
         str_detect(name_clean, "mbogabuchungu|mbogabughungu|mbogabushungu") ~ "solanum macrocarpon",
         str_detect(name_clean, "vetiver grass") ~ "chrysopogon zizanioides",
@@ -357,9 +375,13 @@ project_data_clean <- project_data_clean %>%
         str_detect(name_clean, "casimiroa edulis") ~ "casimiroa edulis",
         str_detect(name_clean, "semia chlorophora") ~ "chlorophora excelsa",
         str_detect(name_clean, "paradise apple") ~ "malus pumila",
-        str_detect(name_clean, "ziziphus morticians|ziziphus morticians|Ziziphusmoriciana") ~ "ziziphus mauritiana",
+        str_detect(name_clean, "ziziphus morticians|ziziphus morticians|ziziphusmoriciana") ~ "ziziphus mauritiana",
         str_detect(name_clean, "\\briz\\b") ~ "rhizophora",
         str_detect(name_clean, "\\bhazombato\\b") ~ "kalanchoe orgyalis",
+        str_detect(name_clean, "wild crippers") ~ "wild creepers",
+        str_detect(name_clean, "mitrigyna librostipulosa") ~ "mitragyna stipulosa",
+        str_detect(name_clean, "picralima nitida") ~ "picralima nitida",
+        str_detect(name_clean, "capsicum annuum") ~ "capsicum annuum",
         TRUE ~ name_clean
       )
   )
@@ -387,23 +409,23 @@ project_data_clean <- project_data_clean %>%
 
 # Make first letter capitalized -------------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   mutate(name_clean = str_to_sentence(name_clean))
 
 # select columns ----------------------------------------------------------
 
-project_data_clean <- project_data_clean %>%
-  select(tree_species_uuid, name_clean)
+project_data_07_22 <- project_data_07_22 %>%
+  select(tree_species_uuid, name_clean, country_code)
 
 # drop NAs ----------------------------------------------------------------
 
-project_data_clean <- project_data_clean %>%
+project_data_07_22 <- project_data_07_22 %>%
   filter(!is.na(name_clean))
 
 # save data ---------------------------------------------------------------
 
 # Cleaned project report data
-write_csv(project_data_clean,
+write_excel_csv(project_data_07_22,
           file = here(
             "Tree Species",
             "Data",
