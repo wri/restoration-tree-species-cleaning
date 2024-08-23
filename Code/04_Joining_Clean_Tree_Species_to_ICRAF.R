@@ -279,15 +279,6 @@ complete_projects <- complete_projects %>%
              TRUE ~ NA_character_
   ))
 
-complete_projects %>%
-  distinct(project_name) %>%
-  count()
-
-matched_data %>%
-  nrow()
-
-6268/7775
-
 # KAMRI data to display ----------------------------------------------------
 
 kamri <- complete_projects %>%
