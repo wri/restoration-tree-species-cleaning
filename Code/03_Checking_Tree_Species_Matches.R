@@ -2,8 +2,8 @@
 
 # Author: Ben Steiger
 # Date Created: 06/10/2024
-# Last Updated: 06/10/2024
-# Description: Cleaning Unmatched TerraFund Project Report Tree Species Data
+# Last Updated: 07/30/2024
+# Description: Verifying Matched TerraFund Project Report Tree Species Data
 
 # Load libraries ----------------------------------------------------------
 
@@ -12,7 +12,6 @@ library(tidyverse)
 library(stringr)
 library(here)
 library(snakecase)
-library(WorldFlora)
 library(readxl)
 library(stringdist)
 library(fuzzyjoin)
@@ -29,7 +28,7 @@ unmatched_data <- read_csv(
     "Processed",
     "Unmatched Data",
     "CSV",
-    "all_unmatched_project_data_7_30.csv"
+    "all_unmatched_project_data_8_21.csv"
   )
 )
 
@@ -42,11 +41,11 @@ matched_data <- read_csv(
     "Matched Data",
     "All Match",
     "CSV",
-    "all_matched_project_data_7_30.csv"
+    "all_matched_project_data_8_21.csv"
   )
 )
 
-project_data_07_22 <- read_excel(
+project_data_07_22_raw <- read_excel(
   here(
     "Tree Species",
     "Data",
@@ -58,14 +57,35 @@ project_data_07_22 <- read_excel(
 
 # convert project_data_07_22 columns to snake_case ------------------------------
 
-names(project_data_07_22) <-
-  to_snake_case(names(project_data_07_22))
+names(project_data_07_22_raw) <-
+  to_snake_case(names(project_data_07_22_raw))
+
+# Correct accents ---------------------------------------------------------
+
+# Define a function to correct accents
+correct_accents <- function(text) {
+  text %>%
+    str_replace_all("Ô", "ï") %>%
+    str_replace_all("È", "é") %>%
+    str_replace_all("Ó", "î") %>%
+    str_replace_all("Ë", "è") %>%
+    str_replace_all("í", "'") %>%
+    str_replace_all("ñ", "–") %>%
+    str_replace_all("‡", "à") %>%
+    str_replace_all("Í", "ê") %>%
+    str_replace_all("Ò", "ñ") %>%
+    str_replace_all("Ù", "ô")
+}
+
+# Apply the function to all character columns in the dataframe
+project_data_07_22 <- project_data_07_22_raw %>%
+  mutate(across(where(is.character), correct_accents))
 
 # subset columns to tree_speices_uuid and species name --------------------
 
 project_data_07_22 <- project_data_07_22 %>%
   select(tree_species_uuid, country_code, name) %>%
-  rename(original_name = name)
+  rename(original_name = name) 
 
 # convert to dataframe ----------------------------------------------------
 
@@ -83,11 +103,11 @@ unmatched_data <-
             project_data_07_22,
             by = "tree_species_uuid")
 
-
 # group_by ----------------------------------------------------------------
 
 check_matches <- matched_data %>%
-  group_by(name_orig, country_code) %>%
+  mutate(original_name = tolower(original_name)) %>%
+  group_by(original_name, country_code) %>%
   slice(1) %>%
   ungroup() %>%
   select(
@@ -97,6 +117,7 @@ check_matches <- matched_data %>%
     name,
     scientific_name,
     scientific_name_id,
+    taxon_id,
     unique,
     fuzzy,
     fuzzy_dist,
@@ -104,30 +125,10 @@ check_matches <- matched_data %>%
     old_name
   ) %>%
   rename(clean_name = name) %>%
+  mutate(notes = "") %>%
   arrange(scientific_name)
 
 # now start sifting through the matches, filtering fuzzy joins
-
-# species I am unsure of:
-
-# tsimitetra
-# le ma
-# mol
-# matembela
-# molucata
-# mil
-# wild crippers
-# gombo
-# miombo
-# tavia
-# le ha
-# gbaji
-# local grasses
-# mwanga
-# sarimanga
-# tavia
-# umbrella invoresia
-# bean
 
 # explore fuzzy matches for accuracy -------------------------------------
 
@@ -143,15 +144,19 @@ fuzzy_matched_project_data <- matched_data %>%
     name,
     scientific_name,
     scientific_name_id,
+    taxon_id,
     unique,
     fuzzy,
     fuzzy_dist
   ) %>%
   arrange(scientific_name)
 
+project_data_07_22 %>%
+  group_by(`Project Name`) %>%
+  count() %>%
+  view()
 
 # save data ---------------------------------------------------------------
-
 
 write_xlsx(
   check_matches,
@@ -162,6 +167,7 @@ write_xlsx(
     "Matched Data",
     "All Match",
     "xlsx",
-    "tree_species_matching_verification_07_30.xlsx"
+    "tree_species_matching_verification_08_21.xlsx"
   )
 )
+
