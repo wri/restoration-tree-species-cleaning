@@ -1,4 +1,4 @@
-This repository contains R scripts and data for cleaning project report data for TerraFund projects on tree species in TerraMatch, exported on June 3rd, 2024. 
+This repository contains R scripts and data for cleaning project report data for TerraFund projects on tree species in TerraMatch, exported on July 22nd, 2024. 
 
 One script is cleaning the tree species data entered by Champions so it can match to the tree species backbone provided by the World Flora Organization (WFO) and the World Checklist of Vascular Plants (WCVP)
 
