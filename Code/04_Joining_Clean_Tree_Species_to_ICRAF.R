@@ -127,7 +127,7 @@ project_data_07_22 <-
 
 globunt_grouped <- globunt_all %>%
   group_by(sid_x) %>%
-  mutate(globunt_country_list = paste(country, collapse = "|")) %>%
+  mutate(globunt_country_list = paste(country, collapse = ";")) %>%
   slice(1) %>%
   ungroup() %>%
   select(-country, -family)
@@ -156,7 +156,7 @@ matched_data <- matched_data %>%
   mutate(
     scientific_name =
       case_when(
-        #        scientific_name == "Olea europaea subsp. cuspidata" ~ "Olea europaea",
+        scientific_name == "Olea europaea subsp. cuspidata" ~ "Olea europaea",
         scientific_name == "Manihot carthaginensis subsp. glaziovii" ~ "Manihot carthagenensis",
         scientific_name == "Acacia albida" ~ "Faidherbia albida",
         scientific_name == "Hesperocyparis lusitanica" ~ "Cupressus lusitanica",
@@ -207,7 +207,7 @@ matched_data_remain <- matched_data %>%
 
 # select columns for saving matched data ----------------------------------
 
-matched_data_globunt_all_sub <- matched_data_globunt_all %>%
+matched_data_globunt_all <- matched_data_globunt_all %>%
   select(
     project_name,
     site_name,
@@ -223,6 +223,7 @@ matched_data_globunt_all_sub <- matched_data_globunt_all %>%
     specific_epithet,
     scientific_final,
     sid_x,
+    old_name,
     geographic_area,
     lifeform_description,
     climate_description,
@@ -230,34 +231,22 @@ matched_data_globunt_all_sub <- matched_data_globunt_all %>%
     af:globunt_country_list
   ) %>%
   arrange(project_name, site_report_due_date, scientific_name)
+
+# case_when statement for nativity ----------------------------------------
+
+matched_data_globunt_all <- matched_data_globunt_all %>%
+  mutate(nativity = 
+           case_when(
+             str_detect(globunt_country_list, fixed(project_country)) ~ "Native",
+             !str_detect(globunt_country_list, fixed(project_country)) ~ "Non-Native",
+             TRUE ~ NA_character_
+           ))
 
 # complete projects -------------------------------------------------------
 
 complete_projects <- matched_data_globunt_all %>%
   filter(!project_name %in% matched_data_remain$project_name) %>%
-  select(
-    project_name,
-    site_name,
-    project_country,
-    amount,
-    site_report_due_date,
-    tree_species_uuid,
-    taxon_id,
-    scientific_name_id,
-    scientific_name,
-    family,
-    genus,
-    specific_epithet,
-    scientific_final,
-    sid_x,
-    geographic_area,
-    lifeform_description,
-    climate_description,
-    red_list,
-    af:globunt_country_list
-  ) %>%
   arrange(project_name, site_report_due_date, scientific_name)
-
 
 # Completeness statistics -------------------------------------------------
 
@@ -269,15 +258,9 @@ species_info_counts <- matched_data %>%
             family_genus_species = sum(!is.na(family) & !is.na(genus) & !is.na(specific_epithet)),
             total = nrow(matched_data)) 
 
-# case_when statement for nativity ----------------------------------------
-
-complete_projects <- complete_projects %>%
-  mutate(nativity = 
-           case_when(
-             str_detect(globunt_country_list, fixed(project_country)) ~ "Native",
-             !str_detect(globunt_country_list, fixed(project_country)) ~ "Non-Native",
-             TRUE ~ NA_character_
-  ))
+matched_data %>%
+  filter(is.na(family) & !is.na(genus) & is.na(specific_epithet)) %>%
+  distinct(genus)
 
 # KAMRI data to display ----------------------------------------------------
 
@@ -294,7 +277,7 @@ kamri <- complete_projects %>%
 
 # export data -------------------------------------------------------
 
-write_excel_csv(matched_data_globunt_all_sub,
+write_excel_csv(matched_data_globunt_all,
                 file = here(
                   "Tree Species",
                   "Data",
