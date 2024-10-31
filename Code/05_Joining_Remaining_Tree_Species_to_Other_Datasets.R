@@ -1,9 +1,9 @@
 # Description -------------------------------------------------------------
 
 # Author: Ben Steiger
-# Date Created: 07/30/2024
-# Last Updated: 08/28/2024
-# Description: Joining Matched TerraFund Project Report Tree Species Data to GlobUNT
+# Date Created: 10/29/2024
+# Last Updated: 10/29/2024
+# Description: Joining Non-Matched TerraFund Project Report Tree Species Data to Individual Datasets
 
 # Load libraries ----------------------------------------------------------
 
@@ -51,7 +51,7 @@ project_data <-
       "Processed",
       "Unmatched Data",
       "CSV",
-      "cleaned_project_tree_species_no_globunt.csv"
+      "terrafund_cleaned_project_tree_species_no_globunt_10_30.csv"
     )
   )
 
@@ -88,26 +88,6 @@ names(gts) <- to_snake_case(names(gts))
 names(wcvp_names) <- to_snake_case(names(wcvp_names))
 
 names(iucn) <- to_snake_case(names(iucn))
-
-# correct accents ---------------------------------------------------------
-
-correct_accents <- function(text) {
-  text %>%
-    str_replace_all("Ô", "ï") %>%
-    str_replace_all("È", "é") %>%
-    str_replace_all("Ó", "î") %>%
-    str_replace_all("Ë", "è") %>%
-    str_replace_all("í", "'") %>%
-    str_replace_all("ñ", "–") %>%
-    str_replace_all("‡", "à") %>%
-    str_replace_all("Í", "ê") %>%
-    str_replace_all("Ò", "ñ") %>%
-    str_replace_all("Ù", "ô")
-}
-
-# Apply the function to all character columns in the dataframe
-project_data <- project_data %>%
-  mutate(across(where(is.character), correct_accents))
 
 # filter project data to data in gts --------------------------------------
 
@@ -151,38 +131,31 @@ wcvp_names <- wcvp_names %>%
 iucn <- iucn %>%
   select(scientific_name, redlist_category)
 
-project_data <- project_data %>%
-  select(
-    project_name,
-    site_name,
-    project_country,
-    amount,
-    site_report_due_date,
-    tree_species_uuid,
-    taxon_id,
-    scientific_name_id,
-    scientific_name,
-    family,
-    genus,
-    specific_epithet,
-    old_name
-  )
-
-# change terminalia glaucescens to Terminalia schimperiana ----------------
+# change any names necessary --------------------------------------------
 
 # gts
-gts_country_distributions <- gts_country_distributions %>%
-  mutate(taxon = case_when(
-    taxon == "Terminalia glaucescens" ~ "Terminalia schimperiana",
-    TRUE ~ taxon
-  ))
+#gts_country_distributions <- gts_country_distributions %>%
+#  mutate(taxon = case_when(
+#    taxon == "Terminalia glaucescens" ~ "Terminalia schimperiana",
+#    TRUE ~ taxon
+#  ))
 
 # iucn
-iucn <- iucn %>%
+#iucn <- iucn %>%
+#  mutate(
+#    scientific_name = case_when(
+#      scientific_name == "Terminalia glaucescens" ~ "Terminalia schimperiana",
+#      TRUE ~ scientific_name
+#    )
+#  )
+
+# wcvp
+wcvp_names <- wcvp_names %>%
   mutate(
-    scientific_name = case_when(
-      scientific_name == "Terminalia glaucescens" ~ "Terminalia schimperiana",
-      TRUE ~ scientific_name
+    taxon_name = case_when(
+#      taxon_name == "Actinidia chinensis var. deliciosa" ~ "Actinidia chinensis",
+      taxon_name == "Punica granatum f. multiplex" ~ "Punica granatum",
+      TRUE ~ taxon_name
     )
   )
 
@@ -231,7 +204,8 @@ join_project_data <- join_project_data %>%
       native_distribution,
       "\\bThe Democratic Republic of the\\b",
       "Democratic Republic of the"
-    )
+    ),
+    native_distribution
   )
 
 # case_when statement for nativity ----------------------------------------
@@ -239,14 +213,14 @@ join_project_data <- join_project_data %>%
 join_project_data <- join_project_data %>%
   mutate(nativity =
            case_when(
-             str_detect(native_distribution, fixed(project_country)) ~ "Native",!str_detect(native_distribution, fixed(project_country)) ~ "Non-Native",
+             str_detect(native_distribution, fixed(country_name)) ~ "Native",!str_detect(native_distribution, fixed(country_name)) ~ "Non-Native",
              TRUE ~ NA_character_
            ))
 
 # replace all "" with NA --------------------------------------------------
 
 join_project_data <- join_project_data %>%
-  mutate(across(everything(), ~ na_if(., "")))
+  mutate(across(where(is.character), ~ na_if(., "")))
 
 # save data ---------------------------------------------------------------
 
@@ -259,6 +233,6 @@ write_excel_csv(
     "Matched Data",
     "All Match",
     "CSV",
-    "new_project_data_match.csv"
+    "terrafund_new_project_data_match_10_30.csv"
   )
 )

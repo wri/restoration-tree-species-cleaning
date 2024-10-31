@@ -1,9 +1,9 @@
 # Description -------------------------------------------------------------
 
 # Author: Ben Steiger
-# Date Created: 08/28/2024
-# Last Updated: 08/28/2024
-# Description: Joining Matched TerraFund Project Report Tree Species Data to GlobUNT
+# Date Created: 10/29/2024
+# Last Updated: 10/29/2024
+# Description: Joining Matched TerraFund Project Report Tree Species Data to Invasive Species Datasets & Binding All Data
 
 # Load libraries ----------------------------------------------------------
 
@@ -35,7 +35,7 @@ project_data_new <-
       "Matched Data",
       "All Match",
       "CSV",
-      "new_project_data_match.csv"
+      "terrafund_new_project_data_match_10_30.csv"
     )
   )
 
@@ -48,7 +48,7 @@ project_data_globunt <-
       "Matched Data",
       "All Match",
       "CSV",
-      "matched_data_globunt_all_final.csv"
+      "terrafund_matched_data_globunt_all_final_10_30.csv"
     )
   )
 
@@ -60,15 +60,17 @@ gisd <-
     sep = ";"
   )
 
+project_data_globunt %>%
+  distinct(lifeform_description)
 
 # extract pdf -------------------------------------------------------------
 
 # Extract text from the PDF
-pdf_text <- pdf_text("Tree Species/Data/Raw/WCUPS/World_Checklist_of_Useful_Plant_Species_2020.pdf")
-
-# View the text from page 
-page_text <- pdf_text[4]
-cat(page_text)
+#pdf_text <- pdf_text("Tree Species/Data/Raw/WCUPS/World_Checklist_of_Useful_Plant_Species_2020.pdf")
+#
+## View the text from page
+#page_text <- pdf_text[4]
+#cat(page_text)
 
 # load griis data --------------------------------------
 
@@ -85,7 +87,7 @@ csv_data <- csv_files %>%
 # This will drop the "accepted_name" column from each data frame in the list
 # which is the extra column in 4 .csv files
 csv_data_cleaned <- csv_data %>%
-  map( ~ .x %>% select(-matches("^accepted_name$")))
+  map(~ .x %>% select(-matches("^accepted_name$")))
 
 # bind files
 # The 'source' column will contain the name of the original file each row came from
@@ -111,22 +113,35 @@ project_data_globunt <- project_data_globunt %>%
 # joined other data
 project_data_new <- project_data_new %>%
   rename(top_830 = top830, red_list_category = redlist_category) %>%
-  select(-taxon_name, -plant_name_id)
+  select(
+    -taxon_name,
+    -plant_name_id,
+    -squished,
+    -brackets_detected,
+    -number_detected,
+    -unique,
+    -matched,
+    -fuzzy,
+    -fuzzy_dist,-old_status,
+    -old_id,
+    -country_code
+  )
 
 # bind project data -------------------------------------------------------
 
 project_data_all <-
   rbind(project_data_globunt, project_data_new)
 
-project_data_all %>%
-  distinct(project_country) %>%
-  arrange(project_country) %>%
-  print(n = Inf)
-
 # select columns from gisd and griis --------------------------------------
 
 griis <- griis %>%
-  select(accepted_name_species, is_invasive, establishment_means, checklist_name, scientific_name) %>%
+  select(
+    accepted_name_species,
+    is_invasive,
+    establishment_means,
+    checklist_name,
+    scientific_name
+  ) %>%
   rename(scientific_name_griis = scientific_name)
 
 gisd <- gisd %>%
@@ -140,27 +155,28 @@ griis <- griis %>%
 # join gisd and griis data ------------------------------------------------
 
 join_griis_gisd <-
-  left_join(griis,
-             gisd,
-             by = c("accepted_name_species" = "species")) 
-
+  left_join(griis, gisd, by = c("accepted_name_species" = "species"))
 
 # edit country names in griis ---------------------------------------------
 
 join_griis_gisd <- join_griis_gisd %>%
-  mutate(checklist_name = 
-    case_when(checklist_name == "Democratic Republic of the Congo" ~ "Congo, Democratic Republic of the",
-              checklist_name == "United Republic of Tanzania" ~ "Tanzania, United Republic of",
-              TRUE ~ checklist_name
-  ))
+  mutate(
+    checklist_name =
+      case_when(
+        checklist_name == "Democratic Republic of the Congo" ~ "Congo, Democratic Republic of the",
+        checklist_name == "United Republic of Tanzania" ~ "Tanzania, United Republic of",
+        TRUE ~ checklist_name
+      )
+  )
 
 # join griis data to project data -----------------------------------------
 
 project_data_griis_gisd <-
-  left_join(project_data_all,
-            join_griis_gisd,
-            by = c("scientific_name" = "accepted_name_species",
-                   "project_country" = "checklist_name")) 
+  left_join(
+    project_data_all,
+    join_griis_gisd,
+    by = c("scientific_name" = "accepted_name_species", "country_name" = "checklist_name")
+  )
 
 # duplicates --------------------------------------------------------------
 
@@ -175,39 +191,17 @@ dupes_to_drop <- dupes %>%
 # drop using scientific name
 
 project_data_griis_gisd <- project_data_griis_gisd %>%
-  filter(!scientific_name_griis %in% dupes_to_drop$scientific_name_griis)
-
+  filter(!scientific_name_griis %in% dupes_to_drop$scientific_name_griis) %>%
+  select(-scientific_name_griis) %>%
+  rename(original_tree_species_name = tree_species_name)
 
 # change blank EICAT to NA ------------------------------------------------
 
 # strictly for data viz
 
 project_data_griis_gisd <- project_data_griis_gisd %>%
-  mutate(eicat = case_when(
-    eicat == "" ~ NA_character_,
-    TRUE ~ eicat
-  ))
+  mutate(eicat = case_when(eicat == "" ~ NA_character_, TRUE ~ eicat))
 
-
-# Correct accents ---------------------------------------------------------
-
-correct_accents <- function(text) {
-  text %>%
-    str_replace_all("Ô", "ï") %>%
-    str_replace_all("È", "é") %>%
-    str_replace_all("Ó", "î") %>%
-    str_replace_all("Ë", "è") %>%
-    str_replace_all("í", "'") %>%
-    str_replace_all("ñ", "–") %>%
-    str_replace_all("‡", "à") %>%
-    str_replace_all("Í", "ê") %>%
-    str_replace_all("Ò", "ñ") %>%
-    str_replace_all("Ù", "ô")
-}
-
-# Apply the function to all character columns in the dataframe
-project_data_griis_gisd <- project_data_griis_gisd %>%
-  mutate(across(where(is.character), correct_accents))
 
 # save data ---------------------------------------------------------------
 
@@ -220,6 +214,6 @@ write_excel_csv(
     "Matched Data",
     "All Match",
     "CSV",
-    "project_data_griis_gisd.csv"
+    "terrafund_project_data_griis_gisd_10_30.csv"
   )
 )
