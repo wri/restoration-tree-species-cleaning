@@ -153,10 +153,12 @@ iucn <- iucn %>%
 wcvp_names <- wcvp_names %>%
   mutate(
     taxon_name = case_when(
-#      taxon_name == "Actinidia chinensis var. deliciosa" ~ "Actinidia chinensis",
+      #      taxon_name == "Actinidia chinensis var. deliciosa" ~ "Actinidia chinensis",
       taxon_name == "Punica granatum f. multiplex" ~ "Punica granatum",
+      taxon_name == "Allium cepa var. aggregatum" ~ "Allium cepa",
       TRUE ~ taxon_name
-    )
+    ),
+    taxon_name = str_replace_all(taxon_name, "×", "x")
   )
 
 # edit wcups scientific names ---------------------------------------------
@@ -167,9 +169,6 @@ wcups <- wcups %>%
 
 # change all data to character
 
-wcups <- wcups %>%
-  mutate_all(as.character)
-
 # join datasets -----------------------------------------------------------
 
 join_project_data <- project_data %>%
@@ -177,7 +176,7 @@ join_project_data <- project_data %>%
   left_join(wcvp_names,
             by = c("scientific_name" = "taxon_name"),
             keep = TRUE) %>%
-  left_join(wcups, by = c("taxon_name" = "scientific_name")) %>%
+  left_join(wcups, by = c("scientific_name" = "scientific_name")) %>%
   left_join(iucn, by = c("scientific_name" = "scientific_name"))
 
 # duplicates --------------------------------------------------------------
@@ -213,7 +212,8 @@ join_project_data <- join_project_data %>%
 join_project_data <- join_project_data %>%
   mutate(nativity =
            case_when(
-             str_detect(native_distribution, fixed(country_name)) ~ "Native",!str_detect(native_distribution, fixed(country_name)) ~ "Non-Native",
+             str_detect(native_distribution, fixed(country_name)) ~ "Native",
+             !str_detect(native_distribution, fixed(country_name)) ~ "Non-Native",
              TRUE ~ NA_character_
            ))
 

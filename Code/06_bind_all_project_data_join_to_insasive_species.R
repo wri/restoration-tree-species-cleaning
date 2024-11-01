@@ -2,7 +2,7 @@
 
 # Author: Ben Steiger
 # Date Created: 10/29/2024
-# Last Updated: 10/29/2024
+# Last Updated: 11/01/2024
 # Description: Joining Matched TerraFund Project Report Tree Species Data to Invasive Species Datasets & Binding All Data
 
 # Load libraries ----------------------------------------------------------
@@ -60,8 +60,18 @@ gisd <-
     sep = ";"
   )
 
-project_data_globunt %>%
-  distinct(lifeform_description)
+# raw project data
+raw_project_data <- 
+  read.csv(
+    here(
+      "Tree Species",
+      "Data",
+      "Raw",
+      "TerraFund Tree Species",
+      "terrafund_tree_species_202410301559.csv"
+    ),
+    encoding = "UTF-8"
+  )
 
 # extract pdf -------------------------------------------------------------
 
@@ -87,7 +97,7 @@ csv_data <- csv_files %>%
 # This will drop the "accepted_name" column from each data frame in the list
 # which is the extra column in 4 .csv files
 csv_data_cleaned <- csv_data %>%
-  map(~ .x %>% select(-matches("^accepted_name$")))
+  map( ~ .x %>% select(-matches("^accepted_name$")))
 
 # bind files
 # The 'source' column will contain the name of the original file each row came from
@@ -114,17 +124,8 @@ project_data_globunt <- project_data_globunt %>%
 project_data_new <- project_data_new %>%
   rename(top_830 = top830, red_list_category = redlist_category) %>%
   select(
-    -taxon_name,
-    -plant_name_id,
-    -squished,
-    -brackets_detected,
-    -number_detected,
-    -unique,
-    -matched,
-    -fuzzy,
-    -fuzzy_dist,-old_status,
-    -old_id,
-    -country_code
+    -taxon_name,-plant_name_id,-squished,-brackets_detected,-number_detected,-unique,-matched,-fuzzy,-fuzzy_dist,
+    -old_status,-old_id,-country_code
   )
 
 # bind project data -------------------------------------------------------
@@ -152,6 +153,16 @@ gisd <- gisd %>%
 griis <- griis %>%
   filter(!is.na(accepted_name_species))
 
+# edit names in griis dataset ---------------------------------------------
+
+griis <- griis %>%
+  mutate(accepted_name_species =
+           case_when(
+             accepted_name_species == "Citrus aurantium" ~ "Citrus x aurantium",
+             accepted_name_species == "Musa paradisiaca" ~ "Musa x paradisiaca",
+             TRUE ~ accepted_name_species
+           ))
+
 # join gisd and griis data ------------------------------------------------
 
 join_griis_gisd <-
@@ -171,6 +182,8 @@ join_griis_gisd <- join_griis_gisd %>%
 
 # join griis data to project data -----------------------------------------
 
+# join by name and if project country is in the GRIIS country distribution
+
 project_data_griis_gisd <-
   left_join(
     project_data_all,
@@ -188,12 +201,13 @@ dupes <- project_data_griis_gisd %>%
 dupes_to_drop <- dupes %>%
   filter(is_invasive == "null")
 
-# drop using scientific name
+# drop using anti_join
 
+project_data_griis_gisd <- anti_join(project_data_griis_gisd, dupes_to_drop)
+
+# rename and remove columns
 project_data_griis_gisd <- project_data_griis_gisd %>%
-  filter(!scientific_name_griis %in% dupes_to_drop$scientific_name_griis) %>%
-  select(-scientific_name_griis) %>%
-  rename(original_tree_species_name = tree_species_name)
+  select(-scientific_name_griis) 
 
 # change blank EICAT to NA ------------------------------------------------
 
@@ -203,10 +217,45 @@ project_data_griis_gisd <- project_data_griis_gisd %>%
   mutate(eicat = case_when(eicat == "" ~ NA_character_, TRUE ~ eicat))
 
 
+# get all rows from original export that were removed ---------------------
+
+raw_project_data_sub <- raw_project_data %>%
+  filter(!tree_species_uuid %in% project_data_griis_gisd$tree_species_uuid)
+
+setdiff(names(raw_project_data_sub), names(project_data_griis_gisd))
+
+# drop columns already in data
+
+raw_project_data <- raw_project_data %>%
+  select(-one_of(setdiff(intersect(names(raw_project_data), names(project_data_griis_gisd)), "tree_species_uuid")))
+
+# inner join to get original data
+
+project_data_griis_gisd <- 
+  inner_join(project_data_griis_gisd, raw_project_data,
+            by = "tree_species_uuid")
+
+# bind_rows to get final data
+
+final_cleaned_project_tree_species <-
+  bind_rows(project_data_griis_gisd,
+            raw_project_data_sub)
+
+# clean up final_cleaned_project_tree_species -----------------------------
+
+# reorder variables
+# change tree_species_name to original_tree_species_name to remove confusion
+# remove temporary tree_species_name_clean
+
+final_cleaned_project_tree_species <- final_cleaned_project_tree_species %>%
+  rename(original_tree_species_name = tree_species_name) %>%
+  select(organisation_uuid, organisation_name, project_uuid, project_name, site_name, framework, country_code, country_name, site_report_due_date, tree_species_uuid,
+         original_tree_species_name, amount, collection, everything(), -tree_species_name_clean)
+
 # save data ---------------------------------------------------------------
 
 write_excel_csv(
-  project_data_griis_gisd,
+  final_cleaned_project_tree_species,
   file = here(
     "Tree Species",
     "Data",
@@ -214,6 +263,6 @@ write_excel_csv(
     "Matched Data",
     "All Match",
     "CSV",
-    "terrafund_project_data_griis_gisd_10_30.csv"
+    "final_cleaned_terrafund_project_tree_species_10_30.csv"
   )
 )

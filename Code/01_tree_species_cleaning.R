@@ -200,7 +200,7 @@ data <- data %>%
     tree_species_name_clean = str_replace_all(tree_species_name_clean, "warbugia", "warburgia"),
     tree_species_name_clean = str_replace_all(
       tree_species_name_clean,
-      "lucena|luceana|lucaena|leauceana|leucena",
+      "lucena|luceana|lucaena|leauceana|leucena|leucaaena",
       "leucaena"
     ),
     tree_species_name_clean = str_replace_all(tree_species_name_clean, "\\babizia\\b|albizzia", "albizia")
@@ -460,7 +460,7 @@ data <- data %>%
         str_detect(tree_species_name_clean, "haricot") ~ "phaseolus vulgaris",
         str_detect(
           tree_species_name_clean,
-          "leucaena leucocephala|luceana leucocephala|leuceana leucocephala|leuceana lycocefala|leucaena lecocephala|leucaena leucecephala|leucaena leucocephiala|leucaena leucpcephala|luceane lococifra"
+          "leucaena leucocephala|leuceana lycocefala|luceana leucocephala|leuceana leucocephala|leuceana lycocefala|leucaena lecocephala|leucaena leucecephala|leucaena leucocephiala|leucaena leucpcephala|luceane lococifra"
         ) ~ "leucaena leucocephala",
         str_detect(tree_species_name_clean, "manioc|manihot esculenta") ~ "manihot esculenta",
         str_detect(tree_species_name_clean, "markhamia ob") ~ "markhamia obtusifolia",
