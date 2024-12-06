@@ -1,4 +1,9 @@
+# Description -------------------------------------------------------------
 
+# Author: Ben Steiger
+# Date Created: 12/05/2024
+# Last Updated: 12/06/2024
+# Description: Removing duplicates from WFO taxonomic backbone
 
 # load packages -----------------------------------------------------------
 
@@ -8,9 +13,6 @@ library(stringr)
 library(here)
 library(snakecase)
 library(WorldFlora)
-library(readxl)
-library(stringdist)
-library(fuzzyjoin)
 library(janitor)
 
 # load data ---------------------------------------------------------------
