@@ -1,0 +1,2 @@
+Species|List|Family|Match|Switchboard|WFO.or.WCVP.ID|CABI.URL|powo_id|geographic_area|lifeform_description|climate_description|Red.Colour|SID_Taxon
+Punica granatum|GTS|Lythraceae|direct|Punica granatum|wfo-0000468843|""|554129-1|NE. Türkiye to W. & N. Pakistan|tree|temperate|black|Punica granatum
