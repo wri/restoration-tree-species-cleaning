@@ -143,7 +143,7 @@ source(here(
   "species_mapping_conversion_fixed",
   "species_mapping_conversion_fixed",
   "species_conversion",
-  "apply_species_dictionarymappings.R"
+  "apply_species_dictionary_mappings.R"
 ))
 
 data <- clean_species_with_lookup(
