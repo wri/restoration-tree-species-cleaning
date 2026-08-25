@@ -5,7 +5,7 @@ These files were generated from `01_tree_species_cleaning_2026_08_24.R`.
 ## Files
 
 - `species_replacements.csv` — the 14 ordered `str_replace_all()` rules from the species-editing section.
-- `species_mappings.csv` — the 762 non-default rules extracted from the large `case_when()` block. The `priority` column preserves the original `case_when()` order.
+- `species_dictionary.csv` — the 762 non-default rules extracted from the large `case_when()` block. 
 - `apply_species_mappings.R` — functions that apply the two tables in the same order as the original script.
 
 ## Recommended project layout
