@@ -1,6 +1,6 @@
 # Species mapping conversion
 
-These files were generated from `01_tree_species_cleaning_2025_11_03.R`.
+These files were generated from `01_tree_species_cleaning_2026_08_24.R`.
 
 ## Files
 
@@ -15,7 +15,7 @@ TerraMatch/
   reference/
     tree_species/
       species_replacements.csv
-      species_mappings.csv
+      species_dictionary.csv
       apply_species_mappings.R
 ```
 
