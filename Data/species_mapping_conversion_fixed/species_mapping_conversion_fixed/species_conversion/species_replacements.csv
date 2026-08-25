@@ -1,0 +1,15 @@
+priority,regex_pattern,replacement
+1,avocatier|avocat|ovacado|avacado|aavocado|avocadoes|avocados|ovacodos|ovocado|avovado|avcatiers,avocado
+2,percea|persa|persia|persis|\bperisa\b|\bparcea\b|\bpercia\b,persea
+3,\bacasia\b|\baccasia\b|\bacascia\b|\bacassia\b|\bacasias\b,acacia
+4,zuzufus|\bziziph\b|zizphus,ziziphus
+5,africam,african
+6,gravellia|gravilia|grevelia|grevelea|grebillea|grevellea|grevillia|gravellea|gravillea|\bgrave\b|gravellae|greveillea|grevellia|greveria|grevilia|grivellea|grivelea,grevillea
+7,upaca,uapaca
+8,ctrucs|ctirus|ctirus|cirtrus|citrus variaties,citrus
+9,polycantha|polycatha,polyacantha
+10,anthoteca|anthotheka,anthotheca
+11,eriobotria,eriobotrya
+12,warbugia,warburgia
+13,lucena|luceana|lucaena|leauceana|leucena|leucaaena,leucaena
+14,\babizia\b|albizzia|albisia,albizia

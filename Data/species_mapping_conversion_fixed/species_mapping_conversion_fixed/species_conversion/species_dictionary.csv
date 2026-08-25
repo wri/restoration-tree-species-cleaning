@@ -1,0 +1,1373 @@
+variant,taxonomic_name,match_type
+\bpalmia\b,elaeis guineensis,regex
+elaeis guineensis,elaeis guineensis,regex
+palm tree,elaeis guineensis,regex
+avocado,persea americana,regex
+persea,persea americana,regex
+anacardium excelsum,anacardium excelsum,exact
+anacardium nanum,anacardium nanum,exact
+anacardium,anacardium occidentale,exact
+\banacarde\b,anacardium occidentale,regex
+\banacardier\b,anacardium occidentale,regex
+\banarcadier\b,anacardium occidentale,regex
+anacarde anacardium occidentale,anacardium occidentale,regex
+anacardium occidentale,anacardium occidentale,regex
+anarcadium occidentale,anacardium occidentale,regex
+cashew,anacardium occidentale,regex
+baobab,adansonia digitata,exact
+adansoni digitata,adansonia digitata,regex
+adansonia didgitata,adansonia digitata,regex
+adansonia digitat,adansonia digitata,regex
+adansonia digitata,adansonia digitata,regex
+adasonia digitata,adansonia digitata,regex
+anansonia digitata,adansonia digitata,regex
+andansonia digitata,adansonia digitata,regex
+andasonia digitata,adansonia digitata,regex
+andosonia digitata,adansonia digitata,regex
+adansonia grandidieri,adansonia grandidieri,regex
+acacia anguistissima,acaciella angustissima,regex
+acacia angustima,acaciella angustissima,regex
+acacia angustissima,acaciella angustissima,regex
+acasia angustissima,acaciella angustissima,regex
+a thomsonii,acacia thomsonii,exact
+abrevispica,acacia brevispica,exact
+\bdecurrens\b,acacia decurrens,regex
+acacia aborea,acacia,exact
+acacia saligina,acacia saligna,regex
+akesia saligina,acacia saligna,regex
+mol,acacia mangium,exact
+acacia magnum,acacia mangium,regex
+acacia mangium,acacia mangium,regex
+molucata,acacia mangium,regex
+acacia auriculoformis,acacia auriculoformis,regex
+ear leaf acacia,acacia auriculoformis,regex
+acacia geradii,acacia gerrardii,regex
+acacia gerrardii,acacia gerrardii,regex
+anilotica,vachellia nilotica,exact
+acacia nilotica,vachellia nilotica,regex
+vachellia nilotica,vachellia nilotica,regex
+apolyacantha,acacia polyacantha,exact
+asenegal,senegalia senegal,exact
+a tortilis,vachellia tortilis,exact
+umbrella,vachellia tortilis,exact
+acacia tortalis,vachellia tortilis,regex
+acacia tortilis,vachellia tortilis,regex
+acacia tortillis,vachellia tortilis,regex
+acaciia tortilis,vachellia tortilis,regex
+thorny acacia,vachellia tortilis,regex
+umbrella invoresia,vachellia tortilis,regex
+umbrella thorn,vachellia tortilis,regex
+umbrella tree,vachellia tortilis,regex
+vachelia tortilis,vachellia tortilis,regex
+vachellia tortilis,vachellia tortilis,regex
+acacia xanthophloea,vachellia xanthophloea,exact
+acascia xanthropholea,vachellia xanthophloea,exact
+axanthophloea,vachellia xanthophloea,exact
+acacia xanthophloea,vachellia xanthophloea,regex
+xanthophloea,vachellia xanthophloea,regex
+acacia galpinii,senegalia galpinii,regex
+acacia mellifera,senegalia mellifera,regex
+black thorn,senegalia mellifera,regex
+honey acacias,senegalia mellifera,regex
+albizia gumifera,albizia gummifera,regex
+albizia gummefera,albizia gummifera,regex
+albizia gummifera,albizia gummifera,regex
+albizia gummifere,albizia gummifera,regex
+albizia odoratissima,albizia odoratissima,regex
+arundinaria alpina,arundinaria alpina,regex
+arundinaria alpine,arundinaria alpina,regex
+bamboo yushania,yushania alpina,regex
+yushania alpina,yushania alpina,regex
+bambous vulgaris,bambusa vulgaris,regex
+bambousa vulgaris,bambusa vulgaris,regex
+bamboussa vulgalis,bambusa vulgaris,regex
+bambusa vugaris,bambusa vulgaris,regex
+bambusa vulgaris,bambusa vulgaris,regex
+bambusa vurlgaris,bambusa vulgaris,regex
+dendrocalamus asper,dendrocalamus asper,regex
+bamboussa,bambusa,exact
+bamboo bamboosodea,bambusa,regex
+bamboo bambusodea,bambusa,regex
+bambusa bambos,bambusa,regex
+bambusa cuttings,bambusa,regex
+bambusoideae,bambusa,regex
+bamboo,bamboo,exact
+bamboo through convergence,bamboo,exact
+bamboo trees,bamboo,exact
+bamboos,bamboo,exact
+indigenous bamboo,bamboo,exact
+\blimon\b,citrus limon,regex
+citronier,citrus limon,regex
+citroniers,citrus limon,regex
+citronnier,citrus limon,regex
+citrus limom,citrus limon,regex
+citrus limon,citrus limon,regex
+lemon,citrus limon,regex
+citrus aurantifolia,citrus aurantifolia,regex
+citrus reticula,citrus reticulata,regex
+mandalin,citrus reticulata,regex
+mandariniers,citrus reticulata,regex
+mandarins,citrus reticulata,regex
+\borange\b,citrus sinensis,regex
+\boranger\b,citrus sinensis,regex
+\borangers\b,citrus sinensis,regex
+\boranges\b,citrus sinensis,regex
+citrus cinensis,citrus sinensis,regex
+citrus sinensis,citrus sinensis,regex
+citrus x sinensis,citrus sinensis,regex
+citrus â sinensis,citrus sinensis,regex
+cutrus siensis,citrus sinensis,regex
+orangiers,citrus sinensis,regex
+grape fruit,citrus paridisi,exact
+mangifera,mangifera indica,exact
+\bmango\b,mangifera indica,regex
+\bmangoes\b,mangifera indica,regex
+\bmangos\b,mangifera indica,regex
+amrapali,mangifera indica,regex
+mangifer endica,mangifera indica,regex
+mangifera endica,mangifera indica,regex
+mangifera indica,mangifera indica,regex
+manguier,mangifera indica,regex
+manguifera indica,mangifera indica,regex
+manjifera indidca,mangifera indica,regex
+casaava,manihot glaziovii,regex
+cassava,manihot glaziovii,regex
+achuechue,lannea welwitschii,regex
+orita multicola,lannea welwitschii,regex
+\bmai\b,zea mays,regex
+\bmais\b,zea mays,regex
+\bmaize\b,zea mays,regex
+\bmao\b,zea mays,regex
+\bmaoes\b,zea mays,regex
+\bmaos\b,zea mays,regex
+\bzea\b,zea mays,regex
+milanga,uapaca,regex
+uapaca spp,uapaca,regex
+misela,uapaca guineensis,regex
+uapaca guineensis,uapaca guineensis,regex
+aukapa kirkiana,uapaca kirkiana,regex
+uapaca kirkiana,uapaca kirkiana,regex
+soja,glycine max,regex
+balanites aegyptiaca,balanites aegyptiaca,regex
+balanites egyptiaca,balanites aegyptiaca,regex
+balanites egyptica,balanites aegyptiaca,regex
+balanities eygptica,balanites aegyptiaca,regex
+ballantines,balanites,exact
+cafe robusta,coffea robusta,regex
+cafe robuster,coffea robusta,regex
+caffea robusta,coffea robusta,regex
+cofea robusta,coffea robusta,regex
+robusta coffee,coffea robusta,regex
+cafe arabica,coffea arabica,regex
+cafeiers arabica,coffea arabica,regex
+cofea arabica,coffea arabica,regex
+coffe arabica,coffea arabica,regex
+coffe arabiga,coffea arabica,regex
+coffea arab,coffea arabica,regex
+coffea arabic,coffea arabica,regex
+coffea arabica,coffea arabica,regex
+coffea arabiga,coffea arabica,regex
+coffea arabira,coffea arabica,regex
+coffee arabica,coffea arabica,regex
+coffefa arabica,coffea arabica,regex
+coffeia arabica,coffea arabica,regex
+coffie arabica,coffea arabica,regex
+cafe,coffea,exact
+coffea,coffea,exact
+coffee,coffea,exact
+african tulip,spathodea campanulata,regex
+african tulip tree,spathodea campanulata,regex
+spathodea campanulata,spathodea campanulata,regex
+spatodea campanulata,spathodea campanulata,regex
+\bemire\b,terminalia ivorensis,regex
+\bframire\b,terminalia ivorensis,regex
+\bframirÃ©\b,terminalia ivorensis,regex
+gbaji,terminalia ivorensis,regex
+ivory coast almond,terminalia ivorensis,regex
+tamalia ivorensis,terminalia ivorensis,regex
+terminalia ivorensis,terminalia ivorensis,regex
+terminalis ivonronsis,terminalia ivorensis,regex
+acajou de bassam,khaya ivorensis,regex
+accajou de bassam,khaya ivorensis,regex
+ivorensis,khaya ivorensis,regex
+khama ivorensis,khaya ivorensis,regex
+khaya ivorensis,khaya ivorensis,regex
+khya ivorensis,khaya ivorensis,regex
+kaya senegalensis,khaya senegalensis,regex
+khaya senegalensis,khaya senegalensis,regex
+caoba,swietenia macrophylla,exact
+swietenia macrophylla,swietenia macrophylla,regex
+swietenia mahogani,swietenia mahogani,regex
+khaya anthethe,khaya anthotheca,regex
+khaya anthotheca,khaya anthotheca,regex
+khaya grandifolia,khaya grandifolia,regex
+\bmahagany\b,khaya,regex
+\bmahogany\b,khaya,regex
+frake,terminalia superba,exact
+ofram,terminalia superba,exact
+terminalia of superba,terminalia superba,regex
+terminalia super,terminalia superba,regex
+terminalia superba,terminalia superba,regex
+\btree tomatoes\b,solanum betaceum,regex
+tamarillo,solanum betaceum,regex
+\btomaotoes\b,solanum lycopersicum,regex
+\btomate\b,solanum lycopersicum,regex
+\btomates\b,solanum lycopersicum,regex
+\btomato\b,solanum lycopersicum,regex
+\btomatoes\b,solanum lycopersicum,regex
+\btotame\b,solanum lycopersicum,regex
+trema orientalis,trema orientalis,regex
+papaya,carica papaya,regex
+papayer,carica papaya,regex
+paw paw,carica papaya,regex
+pawpaw,carica papaya,regex
+corossolier,annona muricata,regex
+crossolier,annona muricata,regex
+guanabana,annona muricata,regex
+annona cherimola,annona cherimola,regex
+annona reticulata,annona reticulata,regex
+annona squamosa,annona squamosa,regex
+custard apple,annona squamosa,regex
+haritaria utilis,heritiera utilis,regex
+heritaria utilis,heritiera utilis,regex
+heritaria utlis,heritiera utilis,regex
+china berry,melia azedarach,regex
+chinaberry,melia azedarach,regex
+melia azadirach,melia azedarach,regex
+melia azedach,melia azedarach,regex
+melia azerach,melia azedarach,regex
+melia,melia volkensii,exact
+melia volkensi,melia volkensii,regex
+melia volkensii,melia volkensii,regex
+etenghi,isoberlinia doka,regex
+isobelina duka,isoberlinia doka,regex
+isobelinia duka,isoberlinia doka,regex
+isoberlina doka,isoberlinia doka,regex
+isoberlinia duka,isoberlinia doka,regex
+cacia siamea,senna siamea,regex
+senna enamea,senna siamea,regex
+senna senamia,senna siamea,regex
+senna siamea,senna siamea,regex
+bauhinia petersianasian,bauhinia petersiana,regex
+\bplaintain\b,musa x paradisiaca,regex
+\bplantain\b,musa x paradisiaca,regex
+\bplantin\b,musa x paradisiaca,regex
+musa paradisiaca,musa x paradisiaca,regex
+\bbanana\b,musa acuminata,regex
+\bbananas\b,musa acuminata,regex
+musaceae banana,musa acuminata,regex
+faideiherbia albida,faidherbia albida,regex
+faiderbia albida,faidherbia albida,regex
+faidherbia albida,faidherbia albida,regex
+musangu,faidherbia albida,regex
+apple,malus domestica,exact
+apples,malus domestica,exact
+malus domestica,malus domestica,regex
+senga wambugu,malus domestica,regex
+syzgium guineense,syzygium guineense,regex
+syzigium guineines,syzygium guineense,regex
+syzygium guineense,syzygium guineense,regex
+syzygium guineese,syzygium guineense,regex
+syzygium quinensi,syzygium guineense,regex
+water berry,syzygium cordatum,exact
+syzgium cordatum,syzygium cordatum,regex
+syzygium cordatum,syzygium cordatum,regex
+syzygium zeyheri,eugenia zeyheri,regex
+jamun,syzygium cumini,exact
+sygizium cumini,syzygium cumini,regex
+syzygium cumini,syzygium cumini,regex
+zysygium cuminii,syzygium cumini,regex
+vitex payos,vitex payos,regex
+beetroot,beta vulgaris,regex
+swiss chard,beta vulgaris,regex
+azadirachita,azadirachita indica,exact
+azadirachta,azadirachita indica,exact
+\bneem\b,azadirachita indica,regex
+axadirachta,azadirachita indica,regex
+azadirachta indica,azadirachita indica,regex
+azadiratcha indica,azadirachita indica,regex
+azadiritcha indica,azadirachita indica,regex
+azadirochata indica,azadirachita indica,regex
+azandiratcha indica,azadirachita indica,regex
+azidracta indica,azadirachita indica,regex
+azadirachta excelsa,azadirachta excelsa,regex
+swartzia madagacahensis,swartzia mangabalensis,regex
+swatziz madagacahensis,swartzia mangabalensis,regex
+beans,vicia,exact
+bean - planted in ha,vicia,regex
+brachystegia,brachystegia,exact
+brachystegia spec,brachystegia,exact
+branchystegia,brachystegia,exact
+\bkandonongwa\b,brachystegia,regex
+\bkaumbwe\b,brachystegia,regex
+brachystegia spiciformis,brachystegia spiciformis,regex
+brastchegia spiciformis,brachystegia spiciformis,regex
+brachystegia eurycoma,brachystegia eurycoma,regex
+\bmiombo\b,brachystegia longifolia,regex
+brachystegia longifolia,brachystegia longifolia,regex
+cedro,cedrela odorata,exact
+cedrela odorata,cedrela odorata,regex
+cedrela red cedar,cedrela odorata,regex
+cedrella odorata,cedrela odorata,regex
+cedrella ordorata,cedrela odorata,regex
+red cedar,cedrela odorata,regex
+cedrela angusifolia,cedrela angustifolia,regex
+cedrela cellulafera,cedrela serrata,exact
+cedrela serrata,cedrela serrata,exact
+cedrela sililata,cedrela serrata,exact
+cedrella serrata,cedrela serrata,exact
+cedrela fissilis,cedrela fissilis,regex
+cedrella siensis,toona sinensis,exact
+cecrophya pentandra,ceiba pentandra,regex
+cedropia pentandra,ceiba pentandra,regex
+ceiba pendratra,ceiba pentandra,regex
+ceiba pentandra,ceiba pentandra,regex
+ceiba petandra,ceiba pentandra,regex
+ceipa pentranda,ceiba pentandra,regex
+ciba patendo,ceiba pentandra,regex
+cieba pentandra,ceiba pentandra,regex
+secropia pentandra,ceiba pentandra,regex
+seiva petranta,ceiba pentandra,regex
+ceiba glaziovii,ceiba glaziovii,regex
+ceiba speciosa,ceiba speciosa,regex
+cola boxiana,cola boxiana,regex
+cola acuminata,cola acuminata,regex
+petit cola,garcinia kola,regex
+small cola,garcinia kola,regex
+cola laleritia,cola laleritia,regex
+cola lepidota,cola lepidota,regex
+monkey kola,cola lepidota,regex
+cola coche,cola,regex
+cola de coche,cola,regex
+combtryum zeyheri,combretum zeyheri,regex
+coton,croton,exact
+croton,croton,exact
+croton spp,croton,exact
+coton megalocarpus,croton megalocarpus,regex
+croton megalocapus,croton megalocarpus,regex
+croton megalocarpus,croton megalocarpus,regex
+croton megalocurpus,croton megalocarpus,regex
+croton megalorcarpus,croton megalocarpus,regex
+croton mergalorcarpus,croton megalocarpus,regex
+croton wood,croton megalocarpus,regex
+croton macrostachyus,croton macrostachyus,regex
+croton macrostasyus,croton macrostachyus,regex
+crtoton mycrostachus,croton macrostachyus,regex
+croton mubamb,croton mubango,regex
+cupressaceae lusitanica,cupressus lusitanica,regex
+cupressaceae lustanica,cupressus lusitanica,regex
+cupressus lusitanica,cupressus lusitanica,regex
+cupresus lucitanica,cupressus lusitanica,regex
+cupresus lustanica,cupressus lusitanica,regex
+cupresuss lisitanica,cupressus lusitanica,regex
+cypress lusitanica,cupressus lusitanica,regex
+cypressus lustanica,cupressus lusitanica,regex
+cyprus lusitanica,cupressus lusitanica,regex
+cipres,cupressus,exact
+cupressus cupressus,cupressus,exact
+cypress,cupressus,exact
+cypriot cedar,cedrus brevifolia,regex
+cedar,cedrus,exact
+cedrus cedar,cedrus,regex
+douglas fir,pseudotsuga menziesii,regex
+douglas-fir,pseudotsuga menziesii,regex
+erithrina lystermon,erythrina lysistemon,regex
+eucalyptus camalandis,eucalyptus camaldulensis,regex
+eucalyptus camalnd,eucalyptus camaldulensis,regex
+eucalyptus camandulensis,eucalyptus camaldulensis,regex
+eucalnus saligna,eucalyptus saligna,regex
+eaucalyptus,eucalyptus,exact
+eucalyptus sp,eucalyptus,exact
+eucaryptus,eucalyptus,exact
+eucalyptus/gum trees,eucalyptus,regex
+bluegum globulus,eucalyptus globulus,regex
+eucalyptus commun,eucalyptus globulus,regex
+eucalyptus glaulus,eucalyptus globulus,regex
+eucalyptus globlus,eucalyptus globulus,regex
+eucalyptus globules,eucalyptus globulus,regex
+eucalyptus globules seedlings,eucalyptus globulus,regex
+eucalyptus globulus,eucalyptus globulus,regex
+teucalyptus globules,eucalyptus globulus,regex
+eucalyptus mannifera,eucalyptus mannifera,regex
+ficus vallis choudea,ficus vallis-choudae,regex
+ficus sycamora,ficus sycomorus,regex
+ficus sycomorus,ficus sycomorus,regex
+ficus thon,ficus thonningii,regex
+ficus thonningii,ficus thonningii,regex
+ficus enormis,ficus enormis,regex
+ficus,ficus,exact
+ficus tree,ficus,exact
+\bchitontho\b,ficus,regex
+\bchivyalala\b,ficus,regex
+\bmulevi\b,ficus,regex
+\bnkhazi\b,ficus,regex
+clerisidia,gliricidia sepium,exact
+\bgliricidia\b,gliricidia sepium,regex
+clerisidia sepium,gliricidia sepium,regex
+gliciria sepium,gliricidia sepium,regex
+gliricirdia sepuim,gliricidia sepium,regex
+glurucudia sepium,gliricidia sepium,regex
+arachide,arachis hypogaea,regex
+arachides,arachis hypogaea,regex
+arachis hypogaea,arachis hypogaea,regex
+arachys hypogea,arachis hypogaea,regex
+arrachide,arachis hypogaea,regex
+gnuts,arachis hypogaea,regex
+ground nuts,arachis hypogaea,regex
+groundnuts,arachis hypogaea,regex
+artocarpus heterophyllus,artocarpus heterophyllus,regex
+jack fruit,artocarpus heterophyllus,regex
+jackfruit,artocarpus heterophyllus,regex
+vitellaria paradoxa,vitellaria paradoxa,regex
+vitellariat paradoxa,vitellaria paradoxa,regex
+mansonia altisima,mansonia altissima,regex
+mansonia altissima,mansonia altissima,regex
+mansonia ultisima,mansonia altissima,regex
+musanga cecropioides,musanga cecropioides,regex
+\bmaesopsis\b,maesopsis eminii,regex
+maesopses eminii,maesopsis eminii,regex
+maesopsis e,maesopsis eminii,regex
+maesospsis eminii,maesopsis eminii,regex
+measopsis eminni,maesopsis eminii,regex
+moesopsis,maesopsis eminii,regex
+musizi,maesopsis eminii,regex
+milletia ferruginea,millettia ferruginea,regex
+millitia ferrugenia,millettia ferruginea,regex
+millitia ferruginol,millettia ferruginea,regex
+karanj,millettia pinnata,regex
+millettia pinnata,millettia pinnata,regex
+pongamia pinnata,millettia pinnata,regex
+mitragyna librostipulosa,mitragyna stipulosa,regex
+moringa,moringa oleifera,exact
+mulinga,moringa oleifera,exact
+drumstick,moringa oleifera,regex
+moringa oleifer,moringa oleifera,regex
+moringa oleifera,moringa oleifera,regex
+moringa oleifere,moringa oleifera,regex
+moringa tree,moringa oleifera,regex
+morus alba,morus alba,regex
+morus mulberry tree,morus,regex
+parkia biglobosa,parkia biglobosa,regex
+parkia bicolor,parkia bicolor,regex
+parquia biclor,parkia bicolor,regex
+ndola,parkia filikodea,regex
+african olive,olea africana,regex
+olea africana,olea africana,regex
+olea europaea sub cuspidate,olea africana,regex
+olea europaea subsp africana,olea africana,regex
+olea europaea subsp cuspidata,olea africana,regex
+olea europea cuspidata,olea africana,regex
+olea capensis,olea capensis,regex
+olea welwichii,olea welwitschii,regex
+olea welwischi,olea welwitschii,regex
+olea welwitchschii,olea welwitschii,regex
+olea wewyshii,olea welwitschii,regex
+olea europae,olea europaea,exact
+olea europea,olea europaea,exact
+passion fruits,passiflora edulis,regex
+passiflora ligularis,passiflora ligularis,regex
+\bmufele\b,piliostigma thonningii,regex
+philosyigma thonnongi,piliostigma thonningii,regex
+piliostigma thonning,piliostigma thonningii,regex
+piliostigma thonningi,piliostigma thonningii,regex
+cajanus cajan,cajanus cajan,regex
+pidgeon pea,cajanus cajan,regex
+pigeon pea,cajanus cajan,regex
+mkpen,pterocarpus erinaceus,regex
+pterocarpus erinaceus,pterocarpus erinaceus,regex
+mimuspos kummel,mimuspos kummel,regex
+pear packham's triumph,pyrus communis,regex
+pyrus communis,pyrus communis,regex
+\bcourge\b,cucurbita pepo,regex
+\bpumpkin\b,cucurbita pepo,regex
+\bpumpkins\b,cucurbita pepo,regex
+rahminus prinoides,rhamnus prinoides,regex
+akpi,ricinodendron heudelotii,exact
+ricinodendrom heudelotti,ricinodendron heudelotii,regex
+ricinodendron heudelotii,ricinodendron heudelotii,regex
+ricinodendron heudelott,ricinodendron heudelotii,regex
+ricinodendron heudelotti,ricinodendron heudelotii,regex
+ricinodendron heudoletii,ricinodendron heudelotii,regex
+ricinodendron heulotii,ricinodendron heudelotii,regex
+ricinodondron heudeleuti,ricinodendron heudelotii,regex
+ricinodondron heudelotii,ricinodendron heudelotii,regex
+\bkigelia\b,kigelia africana,regex
+kigelia africana,kigelia africana,regex
+kigeria africana,kigelia africana,regex
+sausage tree,kigelia africana,regex
+sorghum moench,sorghum bicolor,regex
+sorghum mohench,sorghum bicolor,regex
+le sorg,sorghum,regex
+sorgho,sorghum,regex
+sunflowers,helianthus annuus,regex
+\bmatembela\b,ipomoea batatas,regex
+\bmatembele\b,ipomoea batatas,regex
+patate douce,ipomoea batatas,regex
+sweet potato,ipomoea batatas,regex
+\bpotato\b,solanum tuberosum,regex
+irish potatoes,solanum tuberosum,regex
+mbogabuchungu,solanum macrocarpon,regex
+mbogabughungu,solanum macrocarpon,regex
+mbogabushungu,solanum macrocarpon,regex
+vetiver grass,chrysopogon zizanioides,regex
+ayous,triplochiton scleroxylon,regex
+triplochiton scleroxylon,triplochiton scleroxylon,regex
+busala tuber,dioscorea hirtiflora,regex
+dioscorea hirtiflora,dioscorea hirtiflora,regex
+dioscorea,dioscorea,regex
+ignames,dioscorea,regex
+lucern,medicago sativa,regex
+irvingia gabonensis,irvingia gabonensis,regex
+tieghemella heckelii,tieghemella heckelii,regex
+theo,theobroma cacao,exact
+\bcacao\b,theobroma cacao,regex
+\bcocoa\b,theobroma cacao,regex
+theobroma ca,theobroma cacao,regex
+theobroma caacao,theobroma cacao,regex
+theobroma caca,theobroma cacao,regex
+theobroma cacao,theobroma cacao,regex
+theobroma caoa,theobroma cacao,regex
+theobroma cocoa,theobroma cacao,regex
+coccos nucifera,cocos nucifera,regex
+coconut,cocos nucifera,regex
+coconuts,cocos nucifera,regex
+cocos nucifera,cocos nucifera,regex
+cocus nucifera,cocos nucifera,regex
+pomagranate,punica granatum,regex
+pomegranate,punica granatum,regex
+brocoli,brassica oleracea,regex
+cabbage,brassica oleracea,regex
+kale,brassica oleracea,regex
+\bgrevillea\b,grevillea robusta,regex
+grevilea robista,grevillea robusta,regex
+grevilea robusta,grevillea robusta,regex
+grevillea robusta,grevillea robusta,regex
+grevillea robusts,grevillea robusta,regex
+grievelia robusta,grevillea robusta,regex
+southern silky oak,grevillea robusta,regex
+sagaun,tectona grandis,exact
+sal,tectona grandis,exact
+teak,tectona grandis,exact
+tectona grandis,tectona grandis,regex
+milecia excelsa,milicia excelsa,regex
+milicia excelsa,milicia excelsa,regex
+millecia excelsa,milicia excelsa,regex
+mivule,milicia excelsa,regex
+capsicum frutescens,capsicum frutescens,regex
+\bpepper\b,piper nigrum,regex
+\bpoivrier\b,piper nigrum,regex
+\bbirch\b,betula,regex
+celery,apium graveolens,regex
+grewia bicolar,grewia bicolor,regex
+maple,acer,exact
+acer saccharum,acer saccharum,regex
+haricot,phaseolus vulgaris,regex
+phaseoulus beans,phaseolus vulgaris,regex
+leucaena cena,leucaena leucocephala,regex
+leucaena lecena,leucaena leucocephala,regex
+leucaena lecocephala,leucaena leucocephala,regex
+leucaena leucecephala,leucaena leucocephala,regex
+leucaena leucocephala,leucaena leucocephala,regex
+leucaena leucocephiala,leucaena leucocephala,regex
+leucaena leucpcephala,leucaena leucocephala,regex
+leuceana leucocephala,leucaena leucocephala,regex
+leuceana lycocefala,leucaena leucocephala,regex
+luceana leucocephala,leucaena leucocephala,regex
+luceane lococifra,leucaena leucocephala,regex
+manihot esculenta,manihot esculenta,regex
+manioc,manihot esculenta,regex
+markhamia ob,markhamia obtusifolia,regex
+niebe,vigna unguiculata,regex
+vigna unguiculata,vigna unguiculata,regex
+rosemary,salvia rosmarinus,regex
+prekese,tetrapleura tetraptera,regex
+tetrapleura tetrapetra,tetrapleura tetraptera,regex
+tetrapleura tetraptera,tetrapleura tetraptera,regex
+spinach,spinacia oleracea,regex
+colocasia esculenta,colocasia esculenta,regex
+\bananas\b,ananas comusus,regex
+calostropis procera,calotropis procera,regex
+calotropis procera,calotropis procera,regex
+sodom apple,calotropis procera,regex
+goyavia psidium,psidium guajava,regex
+guajava,psidium guajava,regex
+guava,psidium guajava,regex
+pisdium goyava,psidium guajava,regex
+psidium guajava,psidium guajava,regex
+psidium guayana,psidium guajava,regex
+psidium guayava,psidium guajava,regex
+amaranth,amaranth,regex
+lengalenga,amaranth,regex
+\bwillow\b,salix,regex
+salix \(various native vars\),salix,regex
+casimiroa edulis,casimiroa edulis,regex
+white sapote,casimiroa edulis,regex
+semia chlorophora,chlorophora excelsa,regex
+paradise apple,malus dasyphylla,regex
+ziziphus mauritiana,ziziphus mauritiana,regex
+ziziphus moriciana,ziziphus mauritiana,regex
+ziziphus morticians,ziziphus mauritiana,regex
+ziziphusmoriciana,ziziphus mauritiana,regex
+\briz\b,rhizophora,regex
+\bhazombato\b,kalanchoe orgyalis,regex
+mitrigyna librostipulosa,mitragyna stipulosa,regex
+picralima nitida,picralima nitida,regex
+\bpimiento\b,capsicum annuum,regex
+capsicum annuum,capsicum annuum,regex
+eriobotrya,eriobotrya japonica,regex
+gombo,abelmoschus esculentus,exact
+okra,abelmoschus esculentus,exact
+okro,abelmoschus esculentus,exact
+\btavia\b,rhopalocarpus coriaceus,regex
+\bsarimanga\b,noronhia,regex
+\bwarburgia\b,warburgia ugandensis,regex
+wambugia ugamdemesse,warburgia ugandensis,regex
+\bphilenoptera\b,philenoptera violacea,regex
+\boryza\b,oryza sativa,regex
+\bgmelina\b,gmelina arborea,regex
+\bkhameer\b,gmelina arborea,regex
+\bkhamhar\b,gmelina arborea,regex
+\bceriops\b,ceriops tagal,regex
+prunas,prunus africana,exact
+prunus,prunus africana,exact
+prumus africana,prunus africana,regex
+prunus africana,prunus africana,regex
+prunus persic,prunus persica,regex
+prunier,prunus domestica,regex
+prunus domestica,prunus domestica,regex
+prunus serotina,prunus serotina,regex
+mwanga,pericopsis angolensis,exact
+pericopsis elata,pericopsis elata,regex
+\btsimitetra\b,ilex mitis,regex
+ilex mitis,ilex mitis,regex
+leucaena dephasfolia,leucaena diversifolia,regex
+cocoyam,colocasia esculenta,regex
+entandrophragma angolense,entandrophragma angolense,regex
+entandrophragma cilindricum,entandrophragma cylindricum,regex
+entandrophragma cylindricum,entandrophragma cylindricum,regex
+entandrophragma candelei,entandrophragma candollei,regex
+entandrophragma candollei,entandrophragma candollei,regex
+entendrophragma candellei,entandrophragma candollei,regex
+entendrophragma candolei,entandrophragma candollei,regex
+cedar \(entandrophragma\),entandrophragma,regex
+allinum cepa,allium cepa,regex
+allunum cepa,allium cepa,regex
+aloe africana,aloe africana,regex
+aloe europea,aloe africana,regex
+aloe barbadensis,aloe barbadensis,regex
+aloe var barbadensis,aloe barbadensis,regex
+aloe var chinensis,aloe chinensis,regex
+aloe var secundiflora,aloe secundiflora,regex
+avicenia germinans,avicennia germinans,regex
+avicinnia germinans,avicennia germinans,regex
+avicenna,avicennia,exact
+avicennia,avicennia,exact
+carapa procera,carapa procera,regex
+carapa grandiflora,carapa grandiflora,regex
+carapa guianensis,carapa guianensis,regex
+cassia spectabilis,cassia spectabilis,regex
+cassia leiandra,cassia leiandra,regex
+amaltas,cassia fistula,regex
+cordia africana,cordia africana,regex
+cordial africana,cordia africana,regex
+cordyla africana,cordia africana,regex
+wanza,cordia africana,regex
+cordia sebestena,cordia sebestena,regex
+cordia milleni & c africana,cordia milleni,exact
+cordia goeldiana,cordia goeldiana,regex
+cucumber,cucumis sativus,regex
+eucalyptus gunnii,eucalyptus gunnii,regex
+hagenia abysinicca,hagenia abyssinica,regex
+hagenia abyssinica,hagenia abyssinica,regex
+hagenia habhysynica,hagenia abyssinica,regex
+indigofera so,indigofera,exact
+african pencil-cedar,juniperus procera,regex
+janiperus procera,juniperus procera,regex
+juniperas procera,juniperus procera,regex
+juniperous procera,juniperus procera,regex
+juniperus procera,juniperus procera,regex
+juniperus procurus,juniperus procera,regex
+juniperus virginiana,juniperus virginiana,regex
+macadamia,macadamia integrifolia,exact
+macadamia,macadamia integrifolia,regex
+colophospermum mopane,colophospermum mopane,regex
+myrsine africana,myrsine africana,regex
+nuxia congesta,nuxia congesta,regex
+pseudolachnostylis,pseudolachnostylis maprouneifolia,regex
+pseuudolachnostylis,pseudolachnostylis maprouneifolia,regex
+terminalia catappa,terminalia catappa,regex
+tropical almond,terminalia catappa,regex
+albizia lebbeck,albizia lebbeck,regex
+albizia \(coriaria \),albizia coriara,regex
+dombeya burgessiae,dombeya burgessiae,regex
+dombea torida,dombeya torrida,regex
+dombea toriida,dombeya torrida,regex
+dombeya \(mukeu\),dombeya torrida,regex
+dombeya goetzenii,dombeya torrida,regex
+dombeya goetzi,dombeya torrida,regex
+dombeya tarida,dombeya torrida,regex
+dombeya torrida,dombeya torrida,regex
+ndombeya,dombeya torrida,regex
+monotes,monotes africanus,regex
+pennisetum purpureum,pennisetum purpureum,regex
+pennisetum pedicellatum,pennisetum pedicellatum,regex
+podo carpus,podocarpus,exact
+podocupus,podocarpus,exact
+podocurpus mix,podocarpus,exact
+pordocapus,podocarpus,exact
+afrocarpus latifolia,podocarpus latifolius,regex
+afrocarpus latifolius,podocarpus latifolius,regex
+podo latifolia,podocarpus latifolius,regex
+podocarpus latifolia,podocarpus latifolius,regex
+podorcarpus latifolia,podocarpus latifolius,regex
+podocapus fulcatus,afrocarpus falcatus,regex
+podocarpus falcatus,afrocarpus falcatus,regex
+podorcarpus falcatus,afrocarpus falcatus,regex
+podocapus elatus,podocarpus elatus,regex
+podocarpus elatus,podocarpus elatus,regex
+podocarpus macrophyllus,podocarpus macrophyllus,regex
+schizolobium,schizolobium parahyba,exact
+schizolobium parahyba,schizolobium parahyba,regex
+zi,zingiber officinale,exact
+zing,zingiber officinale,exact
+zingiber,zingiber officinale,regex
+zingliber,zingiber officinale,regex
+flamboyant,delonix regia,exact
+delonix regia,delonix regia,regex
+flambodea,delonix regia,regex
+royal pointiciana,delonix regia,regex
+cornius volkensi,cornus volkensii,regex
+cornus volkensii,cornus volkensii,regex
+allophyllus abysssinica,allophylus abyssinicus,regex
+allophylus abyssinicus,allophylus abyssinicus,regex
+manihot scleroxylon,triplochiton scleroxylon,regex
+actinidia deliciosa,actinidia deliciosa,regex
+anthocleista shweinfurtii,anthocleista schweinfurthii,regex
+apodytis dimiata,apodytes dimidiata,regex
+jacaranda mimosaefolia,jacaranda mimosifolia,regex
+jacaranda mimosifolia,jacaranda mimosifolia,regex
+jacarandar copaia,jacaranda copaia,regex
+boskia,boscia,exact
+breonadia salicina,breonadia salicina,regex
+casuarina equisetifolia,casuarina equisetifolia,regex
+dobergia latifolia,dalbergia latifolia,regex
+aubregrinia taiensis,aubregrinia taiensis,regex
+faurea saligna,faurea saligna,regex
+pitacolumbium,pithecellobium,regex
+harongana madagascariensis,harungana madagascariensis,regex
+harrungana madagariensis,harungana madagascariensis,regex
+harungana madagarensis,harungana madagascariensis,regex
+harungana madagariensis,harungana madagascariensis,regex
+harungana madagascariensis,harungana madagascariensis,regex
+haungana madagarensis,harungana madagascariensis,regex
+intsia bijuga,intsia bijuga,regex
+maesa lanceolata,maesa lanceolata,regex
+maesa laseorata,maesa lanceolata,regex
+pittosporum verticilatum,pittosporum verticilatum,regex
+meru oak,vitex keniensis,regex
+mexican green ash,fraxinus berlandieriana,regex
+myrianthus holstii,myrianthus holstii,regex
+mytragyna rubrostipulata,mytragyna rubrostipulata,regex
+alstonia bronei,alstonia boonei,regex
+afzelia africana,afzelia africana,regex
+afzelia xylocarpa,afzelia xylocarpa,regex
+pinus patula,pinus patula,regex
+pinus kesiya,pinus kesiya,regex
+polycias fluva,polyscias fulva,regex
+polycias fulva,polyscias fulva,regex
+polyscians fulva,polyscias fulva,regex
+polyscias fulva,polyscias fulva,regex
+polycius kikuyuensis,polyscias kikuyuensis,regex
+polyscias kikuyuensis,polyscias kikuyuensis,regex
+porospermum atrorufum,osteospermum atrorufum,regex
+canarium madagascariensis,canarium madagascariensis,regex
+raspberry,rubus,exact
+tamarids,tamarindus indica,regex
+tamarindas indica,tamarindus indica,regex
+tamarinds,tamarindus indica,regex
+tamarindus indica,tamarindus indica,regex
+tarconanthus littiveli,tarchonanthus littoralis,regex
+zanthoxylum gillettii,zanthoxylum gillettii,regex
+tephrosia,tephrosia,exact
+tephrosia sp,tephrosia,exact
+tephrosia \(umuhunwa \),tephrosia,regex
+calliandra callystrusus,calliandra calothyrsus,regex
+calliandra calothyrsys,calliandra calothyrsus,regex
+calliandra calothyrusus,calliandra calothyrsus,regex
+calliandra calothysurs,calliandra calothyrsus,regex
+calliandra collonthysus,calliandra calothyrsus,regex
+raminhus perdinious,rhamnus prinoides,regex
+brachlaena hutchinsii,brachylaena hutchinsii,regex
+sterculia africana,sterculia africana,regex
+excelsa sterculia,sterculia excelsa,regex
+xeroderis shulmanai,xeroderris stuhlmannii,regex
+xeroderris stuhlmannii,xeroderris stuhlmannii,regex
+matilis guate,tabebuia rosea,regex
+matilisguate,tabebuia rosea,regex
+tabeiua rosea,tabebuia rosea,regex
+tabeuia rosea,tabebuia rosea,regex
+taubebia rosae,tabebuia rosea,regex
+cortez,tabebuia ochracea,exact
+encino,quercus virginiana,exact
+pino,pinus,exact
+puno,pinus,exact
+rosul,dalbergia tucarensis,exact
+dalbergia sissoo,dalbergia sissoo,regex
+sheesham,dalbergia sissoo,regex
+santa maria,calophyllum antillanum,exact
+calophylon,calophyllum,exact
+pachyra aquatica,pachira aquatica,exact
+zapote de agua,pachira aquatica,exact
+zapote de aqua,pachira aquatica,exact
+mahua,madhuca longifolia,exact
+madhuca indica,madhuca longifolia,regex
+madhuca longifolia,madhuca longifolia,regex
+bombax ceiba,bombax ceiba,regex
+acokanthera oppositifolia,acokanthera oppositifolia,regex
+acorcotheria oppositifolia,acokanthera oppositifolia,regex
+afzelia bignioides,afzelia bipindensis,regex
+afzelia bipidoides,afzelia bipindensis,regex
+staudtia camerounensis,staudtia kamerunensis,regex
+staudtia kamerounensis,staudtia kamerunensis,regex
+nauclia dideritchii,nauclea diderrichii,regex
+aegiceras corniculatum,aegiceras corniculatum,regex
+amburana cearensis,amburana cearensis,regex
+anadenanthera colubrina,anadenanthera colubrina,regex
+aniba firmula,aniba firmula,regex
+annona mucosa,annona mucosa,regex
+apeiba tibourbou,apeiba tibourbou,regex
+apuleia leiocarpa,apuleia leiocarpa,regex
+astrocaryum huaimi,astrocaryum huaimi,regex
+astronium lecointei,astronium lecointei,regex
+astronium urundeuva,astronium urundeuva,regex
+caderno de capoeira,astronium graveolens,regex
+bagassa guianensis,bagassa guianensis,regex
+bauhinia forficata,bauhinia forficata,regex
+unha de cabra,bauhinia forficata,regex
+bauhinia variegata,bauhinia variegata,regex
+bertholletia excelsa,bertholletia excelsa,regex
+bixa arborea,bixa arborea,regex
+bixa orellana,bixa orellana,regex
+byrsonima crispa,byrsonima crispa,regex
+byrsonima cydoniifolia,byrsonima cydoniifolia,regex
+byrsonima sericea,byrsonima sericea,regex
+callophylum braisliense,calophyllum brasiliense,regex
+calophiullum brasilienses,calophyllum brasiliense,regex
+calophyllum brasieliense,calophyllum brasiliense,regex
+calophyllum brasilienses,calophyllum brasiliense,regex
+calophylum brasiliensis,calophyllum brasiliense,regex
+canavalia ensiformis,canavalia ensiformis,regex
+caryocar cf brasiliense,caryocar brasiliense,regex
+pequi de capoeira,caryocar brasiliense,regex
+cecropia hololeuca,cecropia hololeuca,regex
+cercis canadensis,cercis canadensis,regex
+chloroleucon cf mangense,chloroleucon mangense,regex
+chrysophyllum splendes,chrysophyllum splendes,regex
+clarisia racemosa,clarisia racemosa,regex
+clitoria fairchildian,clitoria fairchildiana,regex
+clusia cf spiritu-sanctensis,clusia spiritu-sanctensis,regex
+copaifera langsdorffii,copaifera langsdorffii,regex
+cornus,cornus,exact
+coumo utilis,coumo utilis,regex
+cupania vernalis,cupania vernalis,regex
+cytharexyllum myrianthum,cytharexyllum myrianthum,regex
+dialium guianense,dialium guianense,regex
+dinizia excelsa,dinizia excelsa,regex
+dipteryx guianensis,dipteryx odorata,regex
+dipteryx odorata,dipteryx odorata,regex
+dodoanea viscosa sub angustissima,dodonaea viscosa subsp. angustissima,regex
+dodonaea viscosa angustissima,dodonaea viscosa subsp. angustissima,regex
+dodonaea viscosa ssp angustissima,dodonaea viscosa subsp. angustissima,regex
+dodonaea viscosa sub angustissima,dodonaea viscosa subsp. angustissima,regex
+enterolobium contortisiliquum,enterolobium contortisiliquum,regex
+enterolobium maximum,enterolobium maximum,regex
+enterolobium timbouva,enterolobium timbouva,regex
+eriotheca pentaphylla,eriotheca pentaphylla,regex
+eugenia brasiliensis,eugenia brasiliensis,regex
+eugenia florida,eugenia florida,regex
+eugenia pyriformis,eugenia pyriformis,regex
+eugenia stipitata,eugenia stipitata,regex
+eugenia uniflora,eugenia uniflora,regex
+euterpe oleracea,euterpe oleracea,regex
+gallesia integrifolia,gallesia integrifolia,regex
+garcinia cf gardneriana,garcinia gardneriana,regex
+garcinia gardneriana,garcinia gardneriana,regex
+garcinia macrophylla,garcinia macrophylla,regex
+geissonspermum laeve,geissonspermum laeve,regex
+genipa americana,genipa americana,regex
+genipa infundibuliformis,genipa infundibuliformis,regex
+guatteria australis,guatteria australis,regex
+handroanthus vellosoi,handroanthus vellosoi,regex
+hevea braseliensis,hevea brasiliensis,regex
+hevea brasileinsis,hevea brasiliensis,regex
+hevea brasiliensis,hevea brasiliensis,regex
+hevea paraheba,hevea brasiliensis,regex
+hymenaea courbaril,hymenaea courbaril,regex
+inga cuil,inga inicuil,regex
+inga cylindrica,inga cylindrica,regex
+inga edulis,inga edulis,regex
+inga laurina,inga laurina,regex
+inga sessilis,inga sessilis,regex
+inga marginata,inga marginata,regex
+inga vera spuria,inga vera subsp. spuria,regex
+ingas,inga,exact
+inga vera wild,inga vera,regex
+jacaranda copaia,jacaranda copaia,regex
+johanesia princeps,johanesia princeps,regex
+kandelia obovate,kandelia obovate,regex
+liriodendron tulipifera,liriodendron tulipifera,regex
+lodgepole pine,pinus contorta,regex
+macrolobium acaciifolium,macrolobium acaciifolium,regex
+macrolobium bifolium,macrolobium bifolium,regex
+macrosamanea pedicellaris,macrosamanea pedicellaris,regex
+manilkara salzmanii,manilkara salzmanii,regex
+\bmanikara app\b,manilkara,regex
+mauritia flexuosa,mauritia flexuosa,regex
+melocanna bambusoides,melocanna bambusoides,regex
+mezilaurus itauba,mezilaurus itauba,regex
+myrcia rostrata,myrcia rostrata,regex
+myrciaria dubia,myrciaria dubia,regex
+oenocarpus bacaba,oenocarpus bacaba,regex
+oenocarpus bataua,oenocarpus bataua,regex
+ormosia excelsa,ormosia excelsa,regex
+ormosia paraensis,ormosia paraensis,regex
+parkia multijuga,parkia multijuga,regex
+parkia pendula,parkia pendula,regex
+pinus echinata,pinus echinata,regex
+piptadenia gonoacantha,piptadenia gonoacantha,regex
+plinia cauliflora,plinia cauliflora,regex
+ponderosa pine,pinus ponderosa,regex
+pouteria caimito,pouteria caimito,regex
+pouteria macrophylla,pouteria macrophylla,regex
+pouteria gardneri,pouteria gardneri,regex
+pouteria adolfi-friedericii,pouteria adolfi-friedericii,regex
+pouteria torta,pouteria torta,regex
+pouteria villamilii,pouteria villamilii,regex
+protium heptaphila,protium heptaphyllum,regex
+protium heptaphyllum,protium heptaphyllum,regex
+prunus serontina,prunus serontina,regex
+quercus alba,quercus alba,regex
+quercus prinus,quercus prinus,regex
+robinia pseudoacacia,robinia pseudoacacia,regex
+samanea tubulosa,samanea tubulosa,regex
+sapindus saponaria,sapindus saponaria,regex
+schinus terebenthifolia,schinus terebinthifolia,regex
+schinus terebinthifolia,schinus terebinthifolia,regex
+schinus terebinthifolius,schinus terebinthifolia,regex
+schinus tereninthifolius,schinus terebinthifolia,regex
+shinus terebentifolius,schinus terebinthifolia,regex
+simarouba amara,simarouba amara,regex
+spondias lutea,spondias lutea,regex
+spondias mombin,spondias mombin,regex
+spruce hybrid,picea,regex
+sterculia chicha,sterculia chicha,regex
+sterculia striata,sterculia striata,regex
+stryphnodendron pulcherrimum,stryphnodendron pulcherrimum,regex
+swartzia euxylophora,swartzia euxylophora,regex
+tabebuia heptaphylla,tabebuia heptaphylla,regex
+tabebuia impetiginosa,tabebuia impetiginosa,regex
+tebeuia inpectinosa,tabebuia impetiginosa,regex
+tabebuia serratifolia,tabebuia serratifolia,regex
+tachigali guianensis,tachigali guianensis,regex
+talisia esculenta,talisia esculenta,regex
+tapirira guianensis,tapirira guianensis,regex
+terminalia amazonia,terminalia amazonia,regex
+terminalia corrugata,terminalia corrugata,regex
+toulicia guianensis,toulicia guianensis,regex
+trema micrantha,trema micranthum,regex
+trembling aspen,populus tremuloides,regex
+viburnum,viburnum,regex
+leptolobium nitens,leptolobium nitens,regex
+puteria torta,puteria torta,regex
+mimusops coriacea,mimusops coriacea,regex
+acacia dealbata dealbata,acacia dealbata subsp. dealbata,exact
+aegiphila integrifolia,aegiphila intergrifolia,regex
+aegiphila intergrifolia,aegiphila intergrifolia,regex
+albizia niopoides,albizia niopoides,regex
+alchornea triplinervia,alchornea triplinervia,regex
+allophyllus edulis,allophyllus edulis,regex
+amburana acreana,amburana acreana,regex
+protium heptaphilla,protium heptaphilla,regex
+anadenanthera macrocarpa,anadenanthera macrocarpa,regex
+anadenanthera peregrina,anadenanthera peregrina,regex
+andira fraxinifolia,andira fraxinifolia,regex
+anadenanthera eregrina,anadenanthera eregrina,regex
+adenanthera pavonia,adenanthera pavonina,regex
+adenatera pavaronica,adenanthera pavonina,regex
+adenatera pavonina,adenanthera pavonina,regex
+adenatera pavoronica,adenanthera pavonina,regex
+adenathera pavaronica,adenanthera pavonina,regex
+adenathera pavonica,adenanthera pavonina,regex
+adenathera pavonina,adenanthera pavonina,regex
+annona coriaceae,annona coriaceae,regex
+\baraca\b,psidium,regex
+arapatiella psilophilla,arapatiella psilophylla,regex
+arapatiella psilophylla,arapatiella psilophylla,regex
+schinus terebentifolius,schinus terebinthifolius,regex
+brosimum alicastrum,brosimum alicastrum,regex
+caesalpinea echinata,caesalpinea echinata,regex
+caesalpinea ferrea,caesalpinea ferrea,regex
+caesalpinia eriostachys,caesalpinia eriostachys,regex
+peltophorum dubium,peltophorum dubium,regex
+canela folha longa,ocotea puberula,regex
+cariniana estre,cariniana estrellensis,regex
+cariniana estrellensis,cariniana estrellensis,regex
+cariniana legalis,cariniana legalis,regex
+cariniana micrantha,cariniana micrantha,regex
+jacaranda micrantha,jacaranda micrantha,regex
+jacaranda brasiliana,jacaranda brasiliana,regex
+castilla ulei,castilla ulei,regex
+cecropia pachystachya,cecropia pachystachya,regex
+cecropiapachystachya,cecropia pachystachya,regex
+ceiba aesculifolia parvifolia,ceiba aesculifolia subsp parvifolia,regex
+ceiba aesculifolia,ceiba aesculifolia,regex
+ceiba pubiflora,ceiba pubiflora,regex
+citarexilum mirianthum,citharexylum myrianthum,regex
+citarexylum myrianthum,citharexylum myrianthum,regex
+citharexylum myrianthum,citharexylum myrianthum,regex
+cochlolospermun vitifolium,cochlospermum vitifolium,regex
+cochlospermum vitifolium,cochlospermum vitifolium,regex
+cochlospermun vitifolium,cochlospermum vitifolium,regex
+colubrina glandulosa,colubrina glandulosa,regex
+combretum leprosum,combretum leprosum,regex
+copafera grycycarpa,copaifera glycycarpa,regex
+copaifera lucens,copaifera lucens,regex
+cordia magnoliifolia,cordia magnoliifolia,regex
+cordia trichotoma,cordia tricothoma,regex
+cordia tricothoma,cordia tricothoma,regex
+couratari guianensis,couratari guianensis,regex
+croton floribundus,croton floribundus,regex
+croton lechleri,croton lechleri,regex
+croton urucurana,croton urucurana,regex
+cyntharexyllum myrianthum,citharexylum myrianthum,regex
+cytharexyllum myrianthum,citharexylum myrianthum,regex
+pau viola,citharexylum myrianthum,regex
+dalbergia nigra,dalbergia nigra,regex
+dhypisa americana,diphysa americana,regex
+diphisa americana,diphysa americana,regex
+diphisa amerina,diphysa americana,regex
+diphysa americana,diphysa americana,regex
+diplotropis purpurea,diplotropis purpurea,regex
+dracaena,dracaena,exact
+dracenna,dracaena,exact
+entada chrystachys,entada chrysostachys,regex
+entada strichnostachy,entada chrysostachys,regex
+intada strichnostachys,entada chrysostachys,regex
+enterolobium ciclocarpum,enterolobium cyclocarpum,regex
+enterolobium cyclocarp,enterolobium cyclocarpum,regex
+enterolobium cyclocarpum,enterolobium cyclocarpum,regex
+enterolobium schomburgkii,enterolobium schomburgkii,regex
+erythrophleum graeveolens,erythrophleum suaveolens,regex
+erythrophleum graveolens,erythrophleum suaveolens,regex
+erythrophleum suaveolensaf,erythrophleum suaveolens,regex
+erythropleum graveolo,erythrophleum suaveolens,regex
+eschweilera ovata,eschweilera ovata,regex
+euterpe precatoria,euterpe precatoria,regex
+gilberiodendron dewevrii,gilbertiodendron dewevrei,regex
+gilbertiodendron dewevrii,gilbertiodendron dewevrei,regex
+gilbertiondendron dewevrii,gilbertiodendron dewevrei,regex
+gilbertodendrion dewevrii,gilbertiodendron dewevrei,regex
+gilbertodendron dewevrii,gilbertiodendron dewevrei,regex
+astronium fraxinifolium,astronium fraxinifolium,regex
+guapira opposita,guapira opposita,regex
+guatemala ulmifolia,guazuma ulmifolia,regex
+guazuma ulmifolia,guazuma ulmifolia,regex
+guibourtha demeusii,guibourtia demeusei,regex
+guibourthia demeusii,guibourtia demeusei,regex
+guibourtia demeusei,guibourtia demeusei,regex
+guibourtia demeusi,guibourtia demeusei,regex
+guibourtia demeusii,guibourtia demeusei,regex
+handroanthus impetiginosus,handroanthus impetiginosus,regex
+himatanthus phagedaenicu,himatanthus phagedaenicus,regex
+homalium trichostemon,homalium trichostemon,regex
+humira balsamifera,humira balsamifera,regex
+hymenaea parvifolia,hymenaea parvifolia,regex
+hymenolobium petreum,hymenolobium petreum,regex
+zeyheria tuberculosa,zeyheria tuberculosa,regex
+ipe verde,cybistax antisyphilitica,regex
+jabuti de macaco,hymenolobium sericeum,regex
+jaracatia spinosa,jaracatia spinosa,regex
+joannesia princeps,joannesia princeps,regex
+euterpe edulis,euterpe edulis,regex
+kunzeaspp,kunzea,regex
+lecythis pisonis,lecythis pisonis,regex
+leptospermumspp,leptospermum,regex
+lichi,litchi chinensis,exact
+litchi sinensis,litchi chinensis,exact
+litchi chinensis,litchi chinensis,regex
+liqui dambar,liquidambar,exact
+machaerium nictitans,machaerium nictitans,regex
+margaritaria nobilis,margaritaria nobilis,regex
+mimosa bimucronata,mimosa bimucronata,regex
+maytenus obtusifolia,maytenus obtusifolia,regex
+micropholis venulosa,micropholis venulosa,regex
+mimosa caesalpinifolia,mimosa caesalpiniifolia,regex
+mimosa caesalpiniifolia,mimosa caesalpiniifolia,regex
+nectandra rubra,nectandra rubra,regex
+nuxia capitata,nuxia capitata,regex
+ochroma pyramidale,ochroma pyramidale,regex
+ormosia arborea,ormosia arborea,regex
+parahancornia fasciculata,parahancornia fasciculata,regex
+paramacrolobium coelucum,paramacrolobium coeruleum,regex
+paramacrolobium coelureum,paramacrolobium coeruleum,regex
+paramacrolobium coeru,paramacrolobium coeruleum,regex
+paubrasilia echinata,paubrasilia echinata,regex
+cyntharexyllum myrianthum,cyntharexyllum myrianthum,regex
+caesalpinia ferrea,caesalpinia ferrea,regex
+triplaris amaericana,triplaris amaericana,regex
+peltorphoorium dubium,peltophorum dubium,regex
+pentachlethra macrophylla,pentaclethra macrophylla,regex
+pentaclehtra macrophilla,pentaclethra macrophylla,regex
+pentaclehtra macrophylla,pentaclethra macrophylla,regex
+pentaclethra macrophilla,pentaclethra macrophylla,regex
+peschiera fuchsiaefolia,peschiera fuchsiaefolia,regex
+piptadenia paniculata,piptadenia paniculata,regex
+plathymenia reticulata,plathymenia reticulata,regex
+platimenia reticulata,plathymenia reticulata,regex
+platymenia reticulata,plathymenia reticulata,regex
+plathymenia foliolosa,plathymenia foliolosa,regex
+platymenia foliolosa,plathymenia foliolosa,regex
+platymiscium aff hebestachyum,platymiscium hebestachyum,regex
+poeppgia procera,poeppgia procera,regex
+pourouma guianensis,pourouma guianensis,regex
+priora balsamifera,prioria balsamifera,regex
+protium aracouchini,protium aracouchini,regex
+pseudobombax grandiflorum,pseudobombax grandiflorum,regex
+pseudobombax munguba,pseudobombax munguba,regex
+pseudolmedia laevis,pseudolmedia laevis,regex
+psidium cattleanum,psidium cattleianum,regex
+psidium cattleianum,psidium cattleianum,regex
+psidium myrtoides,psidium myrtoides,regex
+psidium rufum,psidium rufum,regex
+pterigota brasiliensis,pterigota brasiliensis,regex
+centrolobium microcaete,centrolobium microcaete,regex
+pterocarpus rohrii,pterocarpus rohrii,regex
+rapanea ferruginea,rapanea ferruginea,regex
+schefflera morototoni,schefflera morototoni,regex
+schysolobium parayba,schizolobium parahyba,regex
+scizolobium parahyba,schizolobium parahyba,regex
+senegalia polyphylla,senegalia polyphylla,regex
+senna alata,senna alata,regex
+senna macranthera,senna macranthera,regex
+senna multijuga,senna multijuga,regex
+socratea exorrhiza,socratea exorrhiza,regex
+sparattanthelium botocudorum,sparattanthelium botocudorum,regex
+sparattosperma leucanthum,sparattosperma leucanthum,regex
+spondias macrocarpa,spondias macrocarpa,regex
+spondias venulosa,spondias venulosa,regex
+tabebuia chrysanthav,tabebuia chrysanthus,regex
+terminalia fagifolia,terminalia fagifolia,regex
+terminalia tetraphylla,terminalia tetraphylla,regex
+theobrama speciosum,theobrama speciosum,regex
+thyrsodium schomburgkianum,thyrsodium schomburgkianum,regex
+tibouchina granulosa,tibouchina granulosa,regex
+trattinickia rhoifolia,trattinickia rhoifolia,regex
+vataireopsis araroba,vataireopsis araroba,regex
+virola venosa,virola venosa,regex
+ziera arboresence,zieria arborescens,regex
+zieria arboresence,zieria arborescens,regex
+ziziphus mucronata,ziziphus mucronata,regex
+albizia adiantifolia,albizia adianthifolia,regex
+albizia aldantifolia,albizia adianthifolia,regex
+albizia aldantifolio,albizia adianthifolia,regex
+albizia andianthifolia,albizia adianthifolia,regex
+albizia antelhelmitica,albizia anthelmintica,regex
+disthamenanthus bentamianus,distemonanthus benthamianus,regex
+crateva andansonii subsp odorata,crateva adansonii subsp. odora,regex
+peltogyne vogel,peltogyne,regex
+pseudosamanea tabaco,pseudosamanea,regex
+pterogyne nitens,pterogyne nitens,regex
+tabernaemontana catharinensis,tabernaemontana catharinensis,regex
+andira legalis,andira legalis,regex
+chorisia specios,chorisia speciosa,regex
+albizia sp,albizia,exact
+cassia sp,cassia,exact
+cedrela spp,cedrela,exact
+ekerbagia capensis,ekebergia capensis,regex
+ekerbergia kapensis,ekebergia capensis,regex
+eucalyptus maideni,eucalyptus maidenii,regex
+ficus eriobotryoidesa,eriobotrya japonica,regex
+markamia lutea,markhamia lutea,regex
+vachellia abyssinica,vachellia abyssinica,regex
+aegle marmelous,aegle marmelos,regex
+allocasuarina verticiallata,allocasuarina verticillata,regex
+allocasurina verticillata,allocasuarina verticillata,regex
+alnus acuminata,alnus acuminata,regex
+alnus acuminate,alnus acuminata,regex
+alnus acumita,alnus acuminata,regex
+alnus acumunata,alnus acuminata,regex
+\baaonla\b,phyllanthus emblica,regex
+\baonla\b,phyllanthus emblica,regex
+aonlan,phyllanthus emblica,regex
+phyllanthus emblica,phyllanthus emblica,regex
+anogeissus leiocarpus,anogeissus leiocarpus,regex
+arjun,terminalia arjuna,regex
+antrocaryon klaenea,antrocaryon klaineanum,regex
+antrocaryon klaeneanum,antrocaryon klaineanum,regex
+baie rose,euonymus phellomanus,regex
+sesbanie sesban,sesbania sesban,regex
+\bchindora\b,chindora,regex
+\bchopwa\b,chopwa,regex
+\bcombuja\b,pouteria butyrocarpa,regex
+crudia zeylanica,crudia zeylanica,regex
+andira anthelmia,andira anthelmia,regex
+diospyros cambodiana,diospyros cambodiana,regex
+\bkachere\b,ficus cyathistipula,regex
+lochroma arborescens,lochroma arborescens,regex
+mabea fistulifera,mabea fistulifera,regex
+mallotus plicatus,mallotus plicatus,regex
+martiodendron elatun,martiodendron elatun,regex
+\bmgoza\b,perculia africana,regex
+\bmimosia\b,jacaranda macrantha,regex
+\bmulora\b,mulora,regex
+myracrodruon urundeuva,myracrodruon urundeuva,regex
+paralonchurus brasiliensis,margaritaria nobilis,regex
+parapiptadenia rigida,parapiptadenia rigida,regex
+paraptadenia rigida,parapiptadenia rigida,regex
+peltogyne peniculata,peltogyne peniculata,regex
+peltogyne venosa densiflora,peltogyne venosa subsp. densiflora,regex
+picea engelmannii,picea engelmannii,regex
+terminalia cambodiana,terminalia cambodiana,regex
+aquilaria crassna,aquilaria crassna,regex
+aquilaria malaccensis,aquilaria malaccensis,regex
+cinnamomum porrectum,cinnamomum porrectum,regex
+cotylelobium lanceolatum,cotylelobium lanceolatum,regex
+dalbergia cochinchinensis,dalbergia cochinchinensis,regex
+dalbergia cultrata,dalbergia cultrata,regex
+dalbergia oliveri,dalbergia oliveri,regex
+dalbergia parviflora,dalbergia parviflora,regex
+elaeocarpus randifloras,elaeocarpus randifloras,regex
+erythrina variegate,erythrina variegate,regex
+fagraea fragrans,fagraea fragrans,regex
+gynoxys aff pillahuatensis,gynoxys pillahuatensis,regex
+hopea ferrea,hopea ferrea,regex
+hopea odorata,hopea odorata,regex
+koompassia excelsa,koompassia excelsa,regex
+lagerstroemia speciosa,lagerstroemia speciosa,regex
+lagerstroemia loudonii,lagerstroemia loudonii,regex
+neolamarckia cadamba,neolamarckia cadamba,regex
+pterocarpus macrocarpus,pterocarpus macrocarpus,regex
+schleichera oleosa,schleichera oleosa,regex
+shorea obtusa,shorea obtusa,regex
+shorea siamensis,shorea siamensis,regex
+sindora siamensis,sindora siamensis,regex
+\bbaheda\b,terminalia bellirica,regex
+terminalia bellirica,terminalia bellirica,regex
+xylia xylocarpa,xylia xylocarpa,regex
+comb trifoliatum,combretum trifoliatum,regex
+combr trifoliatum,combretum trifoliatum,regex
+combre trifoliatum,combretum trifoliatum,regex
+combret trifoliatum,combretum trifoliatum,regex
+combretu trifoliatum,combretum trifoliatum,regex
+sinfonia globilifera,symphonia globulifera,regex
+sinfonia grandifolia,symphonia globulifera,regex
+synfonia globilifera,symphonia globulifera,regex
+classificaÃ§Ã£o superior: annona,annona,regex
+lafoensia pacari,lafoensia pacari,regex
+resinosa richardii,rosa richardii,regex
+tabebuia roseoalba,tabebuia roseoalba,regex
+xanthorcesis zambeasiaca,xanthocercis zambesiaca,regex
+xanthorcesis zambesiaca,xanthocercis zambesiaca,regex
+tamarugo,strombocarpa tamarugo,exact
+fermisiana mesquite,neltuma juliflora,exact
+styrax hasseltia,styrax,regex
+aavla,phyllanthus emblica,regex
+awla,phyllanthus emblica,regex
+indian gooseberry,phyllanthus emblica,regex
+chironji,buchanania lanzan,regex
+dalbergia sisoo,dalbergia sisoo,regex
+sesbania grandiflora,sesbania grandiflora,regex
+vachellia leucophloea,vachellia leucophloea,regex
+harra,terminalia cherbula,exact
+acacia catechu,senegalia catechu,regex
+dichanthium annulatum,dichanthium annulatum,regex
+sapindus trifoliatus,sapindus trifoliatus,regex
+seasame,sesamum indicum,exact
+androya decaryi,androya decaryi,regex
+barringtonia acutangular,barringtonia acutangula,regex
+canarium boivini,canarium boivini,regex
+crataeva excelsa,crataeva excelsa,regex
+cupania cf vernalis,cupania vernalis,regex
+ficus baroni,ficus baroni,regex
+ficus megapoda,ficus megapoda,regex
+leea guineengis,leea guineengis,regex
+pourpatria caffra,pourpatria caffra,regex
+protorhus grandidieri,protorhus grandidieri,regex
+reseodendro donnell,roseodendron donnell-smithii,regex
+reseodendron donnell,roseodendron donnell-smithii,regex
+roseodendron donnell,roseodendron donnell-smithii,regex
+tabebuia donnel,roseodendron donnell-smithii,regex
+tabebuia donnel smithii,roseodendron donnell-smithii,regex
+tabebuia donnel-smithii,roseodendron donnell-smithii,regex
+tabebuia donnell,roseodendron donnell-smithii,regex
+tabebuia donnell-smithii,roseodendron donnell-smithii,regex
+tabebuila donnnell,roseodendron donnell-smithii,regex
+tebebuia donell,roseodendron donnell-smithii,regex
+tapiriria guianens,tapirira guianensis,regex
+weinmannia decera,weinmannia decera,regex
+voats,piper borbonense,exact
+voatsi,piper borbonense,exact
+acacia milleniana,acacia milleriana,regex
+acacia milleriana,acacia milleriana,regex
+elaeocarpus pseudo macaranga,elaeocarpus,exact
+diospyros kaki,diospyros kaki,regex
+bapeba de nervura,ecclinusa ramiflora,regex
+bapeba branca,pouteria bapeba,regex
+byrsonima verbascifolia,byrsonima verbascifolia,regex
+citrus hystrix,citrus hystrix,regex
+annona silvestris,annona silvestris,regex
+burselas simaruba,annona silvestris,regex
+brursera cimagura,bursera simaruba,regex
+brysonima alicastrum,brosimum alicastrum,regex
+cordea oleadora,cordia alliodora,regex
+cordia alliodora,cordia alliodora,regex
+cordial allidora,cordia alliodora,regex
+cuercus,quercus,exact
+cuercus plantae,quercus,regex
+dombeya lucida,dombeya lucida,regex
+dracaena madagascariensis,dracaena marginata,regex
+erictrina poepitiana,erythrina poeppigiana,regex
+eritrina poepitiana,erythrina poeppigiana,regex
+eucalyptus radiata,eucalyptus radiata,regex
+eucalyptus viminalis pyroriana,eucalyptus viminalis subsp. pyroriana,regex
+farinha seca,jujpunba langsdorffii,regex
+gameleira vermelha,ficus insipida,regex
+hyeromina alchorneoides,hieronyma alchorneoides,regex
+jacaranda semisserrata,jacaranda semisserrata,regex
+jaratropa curvas,jatropha curcas,regex
+justica,justicia,exact
+laurel silvestre,litsea glaucescens,regex
+leptospernum contentinale,leptospermum continentale,regex
+majuelos carataegus,crataegus monogyna,regex
+makus,malus,exact
+byrsinomia crassifolia,byrsonima crassifolia,regex
+byrsonina crassifolia,byrsonima crassifolia,regex
+murici da praia,byrsonima crassifolia,regex
+palo balsa,ochroma pyramidale,regex
+pau dalho,gallesia integrifolia,regex
+pau pombo,tapirira guianensis,regex
+pau sangue,pterocarpus vernalis,regex
+pino oocarpa,pinus oocarpa,regex
+platymisciun dimhorphan,platymiscium dimorphandrum,regex
+polyclea nodosa,polyscias nodosa,regex
+sclerocarya birrea,sclerocarya birrea,regex
+syzigum verracusum,syzygium verrucosum,regex
+syzyguim armoticum,syzygium aromaticum,regex
+tabernaemontana donnell,tabernaemontana donnell-smithii,regex
+thestostroemia dentata,ternstroemia dentata,regex
+xylopia frutescens,xylopia frutescens,regex
+zanthoxylum nemorale,zanthoxylum nemorale,regex
+baudouina flugeiformis,baudouinia flueggeiformis,regex
+baudouinia fluggeiformis,baudouinia flueggeiformis,regex
+baundonia flugguformis,baudouinia flueggeiformis,regex
+crhysopyllum cainito,chrysophyllum cainito,regex
+crisophyllum cainito,chrysophyllum cainito,regex
+crisophyllum cainitu,chrysophyllum cainito,regex
+eugennia aff,eugenia affinis,exact
+juerana branca,hydrochorea pedicellaris,regex
+nectandra membranacea,nectandra membranacea,regex
+parmentiera aculeata,parmentiera aculeata,regex
+senefeldera multiflora,senefeldera multiflora,regex
+syagrus botryophora,syagrus botryophora,regex
+nephelium philippinense,nephelium lappaceum,regex
+quercus encino,quercus oleoides,regex
